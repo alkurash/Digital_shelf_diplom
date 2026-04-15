@@ -1,0 +1,6 @@
+aiogram>=3.0
+ultralytics
+opencv-python
+Pillow
+sqlalchemy
+python-dotenv

@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+*.pt
+*.h5
+neural_module/models/*
+!neural_module/models/.gitkeep
