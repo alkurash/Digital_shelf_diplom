@@ -4,9 +4,8 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=Retail%20Vision&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Программное%20обеспечение%20для%20мерчендайзеров&descAlignY=60&descSize=20&descColor=c9d1d9" width="100%"/>
 
 <!-- ANIMATED TYPING SVG -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&repeat=true&width=650&lines=🛒+Smart+Merchandising+Platform;📊+AI-Powered+Shelf+Analysis;📱+Real-Time+Retail+Insights;🎓+Дипломный+Проект+2024" alt="Typing SVG" />
-</a>
+![Smart Merchandising](https://img.shields.io/badge/Platform-Smart_Merchandising-58A6FF?style=for-the-badge&logo=aiq)
+![AI Analysis](https://img.shields.io/badge/Analysis-AI--Powered-success?style=for-the-badge&logo=tensorflow)
 
 <br/>
 
@@ -15,7 +14,7 @@
   <img src="https://img.shields.io/badge/Версия-1.0.0-blue?style=for-the-badge&logo=semver&logoColor=white"/>
   <img src="https://img.shields.io/badge/Статус-В%20разработке-orange?style=for-the-badge&logo=statuspage&logoColor=white"/>
   <img src="https://img.shields.io/badge/Лицензия-MIT-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Дипломный%20проект-2024-purple?style=for-the-badge&logo=academia&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Дипломный%20проект-2026-purple?style=for-the-badge&logo=academia&logoColor=white"/>
 </p>
 
 <!-- BADGES ROW 2 — TECH STACK -->
@@ -87,10 +86,10 @@
 ## ✨ Возможности
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="50%"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="20%"/>
 </div>
 
-<table>
+<table align="center">
 <tr>
 <td width="50%">
 
@@ -144,33 +143,33 @@
 <div align="center">
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│                        RETAIL VISION                            │
-│                                                                  │
+┌────────────────────────────────────────────────────────────────┐
+│                        RETAIL VISION                           │
+│                                                                │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐  │
-│  │  📱 Mobile   │    │  🌐 Web      │    │  🔗 External API │  │
+│  │  📱Mobile    │    │  🌐Web       │    │  🔗External API |  │
 │  │  React Native│    │  React.js    │    │  REST / Webhook  │  │
 │  └──────┬───────┘    └──────┬───────┘    └────────┬─────────┘  │
-│         │                   │                      │             │
-│         └───────────────────┴──────────────────────┘            │
-│                             │                                    │
-│                    ┌────────▼────────┐                          │
-│                    │  🚀 FastAPI     │                          │
-│                    │  Backend Server │                          │
-│                    └────────┬────────┘                          │
-│                             │                                    │
+│         │                   │                     │            │
+│         └───────────────────┴─────────────────────┘            │
+│                             │                                  │
+│                    ┌────────▼────────┐                         │
+│                    │  🚀 FastAPI     │                        │
+│                    │  Backend Server │                         │
+│                    └────────┬────────┘                         │
+│                             │                                  │
 │         ┌───────────────────┼───────────────────┐              │
 │         │                   │                   │              │
-│  ┌──────▼──────┐   ┌───────▼───────┐   ┌──────▼──────┐       │
-│  │ 🤖 AI Engine│   │ 🗄️ PostgreSQL │   │ 📁 MinIO    │       │
-│  │  YOLOv8 +   │   │   Database    │   │  S3 Storage │       │
-│  │  OpenCV     │   │               │   │  (Images)   │       │
-│  └─────────────┘   └───────────────┘   └─────────────┘       │
-│                                                                  │
+│  ┌──────▼──────┐   ┌───────▼───────┐     ┌──────▼──────┐       │
+│  │ 🤖 AI Engine│   │ 🗄️ PostgreSQL │     │ 📁 MinIO   │       │
+│  │  YOLOv8 +   │   │   Database    │     │  S3 Storage │       │
+│  │  OpenCV     │   │               │     │  (Images)   │       │
+│  └─────────────┘   └───────────────┘     └─────────────┘       │
+│                                                                │
 │  ┌────────────────────────────────────────────────────────┐    │
-│  │ 🐳 Docker Compose                                       │    │
+│  │ 🐳 Docker Compose                                      │   |
 │  └────────────────────────────────────────────────────────┘    │
-└─────────────────────────────────────────────────────────────────┘
+└────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
@@ -326,7 +325,7 @@ python detect.py --source test_image.jpg
 
 ### 🌐 Веб-дашборд
 
-<img src="https://user-images.githubusercontent.com/74038190/238200428-67f477ed-6624-42da-99f0-1a7b1a16eecb.gif" width="800" alt="Dashboard Preview"/>
+<img src="https://user-images.githubusercontent.com/74038190/238200428-67f477ed-6624-42da-99f0-1a7b1a16eecb.gif" width="30%" alt="Dashboard Preview"/>
 
 <br/><br/>
 
@@ -336,17 +335,17 @@ python detect.py --source test_image.jpg
 
 ```
 ┌────────────────────────────────────────────────────┐
-│  📸 Исходное фото          🤖 После анализа        │
-│                                                      │
+│  📸 Исходное фото          🤖 После анализа       │
+│                                                    │
 │  [═══════════════]    →    [▓ SKU-001 95%] ✅      │
 │  [   ПОЛКА #3   ]          [▓ SKU-002 92%] ✅      │
-│  [═══════════════]         [░ ПУСТО       ] 🔴      │
+│  [═══════════════]         [░ ПУСТО       ] 🔴     │
 │  [   Товары...  ]          [▓ SKU-004 88%] ✅      │
 │  [═══════════════]         [▓ SKU-005 91%] ⚠️ цена │
 └────────────────────────────────────────────────────┘
 ```
 
-<img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="500"/>
+<img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="30%"/>
 
 </div>
 
@@ -415,11 +414,11 @@ flowchart TD
 ╔══════════════════════════════════════════════════════════════╗
 ║                  📜 ИНФОРМАЦИЯ О ПРОЕКТЕ                     ║
 ╠══════════════════════════════════════════════════════════════╣
-║  🏫 Учебное заведение:  [Название вашего университета]       ║
-║  📚 Специальность:      [Ваша специальность]                 ║
-║  🎓 Квалификация:       Бакалавр / Специалист                ║
-║  📅 Год защиты:         2024                                 ║
-║  🔬 Научный руководитель: [ФИО руководителя]                 ║
+║  🏫 Учебное заведение:  [БрГТУ]                              ║
+║  📚 Специальность:      [Искусственный интеллект]            ║
+║  🎓 Квалификация:       Студент                              ║
+║  📅 Год защиты:         2026                                 ║
+║  🔬 Научный руководитель: [Иванюк Дмитрий Сергеевич]         ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -473,14 +472,14 @@ Digital_shelf_diplom/
 
 <!-- Замените на свои данные -->
 
-<img src="https://github.com/YOUR_USERNAME.png" width="120" style="border-radius: 50%"/>
+<img src="https://github.com/alkurash.png" width="120" style="border-radius: 50%"/>
 
-### 👨‍💻 [Ваше Имя]
+### 👨‍💻 [Александр]
 
 **Разработчик | Студент-дипломник**
 
 <p>
-  <a href="https://github.com/YOUR_USERNAME">
+  <a href="https://github.com/alkurash">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   <a href="https://t.me/YOUR_TELEGRAM">
@@ -500,7 +499,7 @@ Digital_shelf_diplom/
 <div align="center">
 
 ```
-MIT License — Copyright (c) 2024 [Ваше Имя]
+MIT License — Copyright (c) 2026 [Кураш Александр]
 Свободно для использования в образовательных целях.
 ```
 
