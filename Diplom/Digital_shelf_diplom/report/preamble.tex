@@ -59,7 +59,7 @@
     \setmainlanguage[babelshorthands = true]{russian} % устанавливаемя русский как основной язык
     \setotherlanguage{english} % устанавливаем английский как дополнительный язык
 
-    \setmainfont{Times New Roman} % устанавливаем главный шрифт 
+    \setmainfont{FreeSerif} % устанавливаем главный шрифт 
     \setsansfont[Ligatures=TeX]{Arial} % устонавливаем дополнительный шрмфт 
 
     \newfontfamily\cyrillicfont[Script=Cyrillic]{Times New Roman} % делаем так, чтобы русский язык мог отображаться главным шрифтом 
@@ -133,6 +133,18 @@
     \makeatletter
     \def\@oddhead{\simpleGrad}
     \def\@oddfoot{}
+    \def\@evenhead{\simpleGrad}
+    \def\@evenfoot{}
+    
+    % plain используется автоматически на первой странице каждой \chapter
+    \let\ps@plain\ps@empty
+    \renewcommand{\ps@plain}{%
+        \def\@oddhead{\simpleGrad}%
+        \def\@oddfoot{}%
+        \def\@evenhead{\simpleGrad}%
+        \def\@evenfoot{}%
+    }
+    \pagestyle{plain}
     \makeatother
 
     \newcounter{chaptercntr}
