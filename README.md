@@ -1,35 +1,30 @@
 <div align="center">
 
-<!-- ANIMATED HEADER BANNER -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=200&section=header&text=Retail%20Vision&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Программное%20обеспечение%20для%20мерчендайзеров&descAlignY=60&descSize=20&descColor=c9d1d9" width="100%"/>
-
-<!-- ANIMATED TYPING SVG -->
-![Smart Merchandising](https://img.shields.io/badge/Platform-Smart_Merchandising-58A6FF?style=for-the-badge&logo=aiq)
-![AI Analysis](https://img.shields.io/badge/Analysis-AI--Powered-success?style=for-the-badge&logo=tensorflow)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,30:16213e,60:0f3460,100:e94560&height=220&section=header&text=🍦%20Retail%20Vision&fontSize=72&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Система%20контроля%20мерчендайзинга%20«Санта%20Импэкс»&descAlignY=62&descSize=18&descColor=a8d8ea" width="100%"/>
 
 <br/>
 
-<!-- BADGES ROW 1 -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=E94560&center=true&vCenter=true&width=700&lines=YOLOv8+%E2%80%A2+Computer+Vision+%E2%80%A2+Telegram+Bot;Автоматический+контроль+выкладки+товаров;15+классов+продукции+ТОП%2C+Soletto%2C+ЮККИ;mAP%4050+%3D+91.4%25+%E2%80%94+точность+детекции" alt="Typing SVG"/>
+
+<br/><br/>
+
 <p>
-  <img src="https://img.shields.io/badge/Версия-1.0.0-blue?style=for-the-badge&logo=semver&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Статус-В%20разработке-orange?style=for-the-badge&logo=statuspage&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Лицензия-MIT-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Дипломный%20проект-2026-purple?style=for-the-badge&logo=academia&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Версия-1.0.0-E94560?style=for-the-badge&logo=semver&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Статус-В%20разработке-FF6B35?style=for-the-badge&logo=statuspage&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Дипломный%20проект-2026-0f3460?style=for-the-badge&logo=academia&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Лицензия-MIT-16213e?style=for-the-badge&logo=opensourceinitiative&logoColor=white"/>
 </p>
 
-<!-- BADGES ROW 2 — TECH STACK -->
 <p>
   <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/OpenCV-4.9-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
   <img src="https://img.shields.io/badge/YOLOv8-Ultralytics-FF6B35?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/FastAPI-0.111-009688?style=for-the-badge&logo=fastapi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
+  <img src="https://img.shields.io/badge/Aiogram-3.x-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
   <img src="https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenCV-4.9-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white"/>
+  <img src="https://img.shields.io/badge/SQLAlchemy-2.0-CC0000?style=for-the-badge&logo=python&logoColor=white"/>
 </p>
 
-<!-- DEMO GIF PLACEHOLDER -->
-<br/>
-<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="900"/>
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
 
 </div>
 
@@ -39,18 +34,21 @@
 
 <div align="center">
 
-| Раздел | Описание |
-|--------|----------|
-| [🎯 О проекте](#-о-проекте) | Цели и задачи системы |
+| 🔗 Раздел | 📝 Описание |
+|:---:|:---|
+| [🎯 О проекте](#-о-проекте) | Цели, задачи и проблематика системы |
+| [🏢 Предметная область](#-предметная-область) | Продукция «Санта Импэкс» и мерчендайзинг |
+| [🍦 Датасет классов](#-датасет-классов) | 15 SKU: ТОП, Soletto, ЮККИ |
 | [✨ Возможности](#-возможности) | Ключевые функции платформы |
-| [🏗️ Архитектура](#️-архитектура) | Структура системы |
+| [🏗️ Архитектура](#️-архитектура) | Структура системы и модули |
+| [🤖 Нейросетевой модуль](#-нейросетевой-модуль) | YOLOv8: обучение и детекция |
+| [📐 Алгоритм планограммы](#-алгоритм-сопоставления-с-планограммой) | Логика проверки выкладки |
 | [🛠️ Технологии](#️-технологии) | Стек технологий |
 | [🚀 Установка](#-установка) | Быстрый старт |
-| [📱 Скриншоты](#-скриншоты) | Интерфейс приложения |
-| [📊 Алгоритм работы](#-алгоритм-работы) | Как работает система |
-| [📈 Результаты](#-результаты) | Метрики и достижения |
-| [🎓 Дипломная работа](#-дипломная-работа) | Информация о проекте |
-| [👤 Автор](#-автор) | Контакты |
+| [📊 Алгоритм работы](#-алгоритм-работы) | Пайплайн обработки |
+| [📈 Результаты](#-результаты) | Метрики качества |
+| [🗂️ Структура проекта](#️-структура-проекта) | Описание модулей |
+| [🎓 Дипломная работа](#-дипломная-работа) | Академическая информация |
 
 </div>
 
@@ -59,78 +57,168 @@
 ## 🎯 О проекте
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="400"/>
+  <img src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif" width="350"/>
 </div>
 
-> **Retail Vision** — интеллектуальная система компьютерного зрения для автоматизации работы мерчендайзеров. Платформа в режиме реального времени анализирует расстановку товаров на полках, выявляет out-of-stock позиции, нарушения планограмм и формирует аналитические отчёты.
+> **Retail Vision** — интеллектуальная система компьютерного зрения для автоматизации контроля мерчендайзинга в компании **«Санта Импэкс»**. Система анализирует фотографии торговых полок через Telegram-бот, выявляет нарушения планограммы среди **15 классов продукции** брендов **ТОП**, **Soletto** и **ЮККИ**, и автоматически формирует структурированные отчёты.
 
-### 🎯 Проблематика
+### 🔴 Проблематика
 
-В современном ритейле мерчендайзеры тратят **до 70% рабочего времени** на ручной обход торговых точек и сверку выкладки с планограммами. Это приводит к:
+В компании «Санта Импэкс» мерчендайзеры тратят значительную часть рабочего времени на ручной обход торговых точек и сверку выкладки морозильных витрин с планограммами. Это порождает ряд системных проблем:
 
-- 🔴 Задержке реакции на out-of-stock ситуации (в среднем **4–6 часов**)
-- 🔴 Человеческому фактору при проверке соответствия планограммам
-- 🔴 Отсутствию централизованной аналитики по торговым точкам
-- 🔴 Высоким операционным затратам на полевые выезды
+```
+❌ Задержка реакции на out-of-stock ситуации — в среднем 4–6 часов
+❌ Человеческий фактор при проверке соответствия планограммам  
+❌ Отсутствие централизованной аналитики по торговым точкам
+❌ Высокие операционные затраты на полевые выезды мерчендайзеров
+❌ Сложность контроля правильности фейсинга и зонирования SKU
+```
 
 ### 💡 Решение
 
-**Retail Vision** автоматизирует весь цикл контроля мерчендайзинга:
+```
+📸 Фото полки  ──►  🤖 YOLOv8 детекция  ──►  📐 Сверка с планограммой
+      ▲                                               │
+      │                                               ▼
+📲 Telegram-бот  ◄──  📊 Аннотированное фото + Отчёт в БД
+```
+
+---
+
+## 🏢 Предметная область
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="80"/>
+</div>
+
+**«Санта Импэкс»** — белорусский производитель и дистрибьютор замороженных десертов и мороженого. Компания реализует продукцию через розничные торговые сети, где качество мерчендайзинга напрямую влияет на объём продаж.
+
+### 📌 Требования к контролю выкладки
+
+Стандарты мерчендайзинга «Санта Импэкс» предусматривают:
+
+- **Зонирование по бренду** — продукция ТОП, Soletto и ЮККИ размещается в строго отведённых зонах морозильной витрины
+- **Фейсинг** — минимальное количество фейсов каждого SKU согласно планограмме
+- **Вертикальная и горизонтальная группировка** — однотипные позиции располагаются блоком
+- **Видимость ценников** — каждая позиция должна иметь корректный ценник
+- **Out-of-stock контроль** — недопустимо наличие пустых зон в зоне выкладки
+
+### 🗺️ Зоны морозильной витрины
 
 ```
-📸 Фото полки  →  🤖 AI-анализ  →  📊 Отчёт  →  📲 Уведомление мерчендайзеру
+┌─────────────────────────────────────────────────────────┐
+│          ПЛАНОГРАММА МОРОЗИЛЬНОЙ ВИТРИНЫ                │
+├──────────────┬──────────────────┬───────────────────────┤
+│   Зона A     │     Зона B       │       Зона C          │
+│  🍦 ТОП      │   🍨 Soletto     │     🍧 ЮККИ           │
+│              │                  │                       │
+│  Рожки       │  Classico Рожки  │  Пломбир (стакан)    │
+│  Стаканчики  │  Gourmet (стак.) │  Пломбир (эскимо)    │
+│  Эскимо      │                  │  Контейнер            │
+│  ТРИО (пакет)│                  │  Семейное (пакет)    │
+├──────────────┴──────────────────┴───────────────────────┤
+│  🔴 out-of-stock   ⚠️ нарушение позиции   ✅ норма      │
+└─────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## 🍦 Датасет классов
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="250"/>
+</div>
+
+### Таблица 3.1 — Классы датасета продукции «Санта Импэкс»
+
+<div align="center">
+
+| ID | Бренд | Серия | Вкус / Граммовка | Тип упаковки |
+|:--:|:-----:|:-----:|:-----------------|:------------:|
+| **0** | 🔵 **ТОП** | Рожок | Клубника со сливками, 75 г | 🍦 Рожок |
+| **1** | 🔵 **ТОП** | Рожок | Фисташка, 75 г | 🍦 Рожок |
+| **2** | 🔵 **ТОП** | Стаканчик | Шоколад / Ваниль, 65 г | 🥛 Стакан |
+| **3** | 🔵 **ТОП** | Эскимо | Карамель / Арахис, 70 г | 🍡 Эскимо |
+| **4** | 🔵 **ТОП** | ТРИО | Клубника-Ваниль-Шоколад, 400 г | 📦 Пакет |
+| **5** | 🟣 **Soletto** | Рожок Classico | Лаванда-Черника, 75 г | 🍦 Рожок |
+| **6** | 🟣 **Soletto** | Рожок Classico | Фисташка-Марципан, 75 г | 🍦 Рожок |
+| **7** | 🟣 **Soletto** | Рожок Classico | Гранат-Лимон, 75 г | 🍦 Рожок |
+| **8** | 🟣 **Soletto** | Gourmet | Кедровый орех-Гауда, 190 г | 🥛 Стакан |
+| **9** | 🟣 **Soletto** | Gourmet | Шоколад-Брауни, 190 г | 🥛 Стакан |
+| **10** | 🟡 **ЮККИ** | Пломбир | На сливках (ваниль), 65 г | 🥛 Стакан |
+| **11** | 🟡 **ЮККИ** | Пломбир | В шоколадной глазури, 70 г | 🍡 Эскимо |
+| **12** | 🟡 **ЮККИ** | Контейнер | Муравейник (с маком/печеньем), 450 г | 📦 Контейнер |
+| **13** | 🟡 **ЮККИ** | Семейное | Ваниль / Шоколад, 400 г | 📦 Пакет |
+| **14** | 🔵 **ТОП ЛЕД** | Фруктовый лёд | Малина-Лимон / Арбуз, 70 г | 🧊 Лёд |
+
+</div>
+
+### 📊 Распределение классов по брендам
+
+```
+Бренд ТОП        ████████████████████░░░░░░  5 классов  (33.3%)
+Бренд Soletto    ████████████████████░░░░░░  5 классов  (33.3%)
+Бренд ЮККИ       ████████████████████░░░░░░  4 класса   (26.7%)
+ТОП ЛЕД          ██████░░░░░░░░░░░░░░░░░░░░  1 класс    (6.7%)
+```
+
+### 📐 Особенности датасета
+
+- **Итого классов:** 15 SKU
+- **Тип аннотации:** Bounding Box (YOLO-формат)
+- **Условия съёмки:** морозильные витрины в супермаркетах, различное освещение
+- **Сложности детекции:** схожий внешний вид рожков разных брендов, бликующие витрины, частичные перекрытия объектов
 
 ---
 
 ## ✨ Возможности
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="20%"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="18%"/>
 </div>
 
-<table align="center">
+<table>
 <tr>
 <td width="50%">
 
-### 🔍 Компьютерное зрение
-- 📦 Распознавание **товарных позиций** на полках
-- 📐 Проверка соответствия **планограмме**
-- 🔴 Детекция **out-of-stock** зон
-- 🏷️ Считывание **ценников** и промо-материалов
-- 📏 Измерение **фейсинга** каждого SKU
+### 🤖 Нейросетевая детекция
+- 🍦 Распознавание **15 SKU** продукции «Санта Импэкс»
+- 📐 Проверка соответствия **планограмме** по зонам
+- 🔴 Выявление **out-of-stock** зон на полке
+- 🎯 Детекция **смешения брендов** (нарушение зонирования)
+- 📏 Контроль **фейсинга** каждой позиции
 
 </td>
 <td width="50%">
 
-### 📊 Аналитика и отчётность
-- 📈 Дашборд в **режиме реального времени**
-- 📉 История выкладки по **торговым точкам**
-- 🗺️ **Тепловые карты** полочного пространства
-- 📋 Автоматическая генерация **отчётов**
-- 🔔 Push-уведомления при **нарушениях**
+### 📊 Отчётность и аналитика
+- 📸 **Аннотированное изображение** с нарушениями
+- 📋 Автоматическая генерация **PDF-отчётов**
+- 💾 Хранение истории проверок в **PostgreSQL**
+- 📈 Подсчёт **процента соответствия** планограмме
+- 📝 Конкретные **рекомендации** по исправлению
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### 📱 Мобильное приложение
-- 📷 Съёмка полки прямо **из приложения**
-- ⚡ Анализ результата за **< 3 секунды**
-- 🗺️ Маршрутный лист на день
-- 🔄 Offline-режим с **синхронизацией**
-- ✅ Чек-листы задач мерчендайзера
+### 📲 Telegram-бот интерфейс
+- 📤 Загрузка фото **прямо из Telegram**
+- ⚡ Результат детекции за **< 3 секунды**
+- 🗂️ Просмотр истории **предыдущих проверок**
+- 🔔 Уведомления о **критических нарушениях**
+- 👥 **Ролевая модель:** менеджер / мерчендайзер
 
 </td>
 <td width="50%">
 
-### 🛡️ Управление и безопасность
-- 👥 Ролевая модель: **Менеджер / Мерчендайзер**
-- 🔐 JWT-авторизация
-- 🏢 Мультиклиентская **архитектура**
-- 📦 Управление **базой SKU** и планограммами
-- 🔗 REST API для интеграции с **ERP/WMS**
+### 🛡️ Надёжность системы
+- 🗄️ Персистентное хранение **всех результатов**
+- 🔄 Асинхронная обработка через **aiogram 3**
+- 🧩 **Модульная архитектура** — легко масштабировать
+- ✅ Покрытие **юнит-тестами** ключевых модулей
+- 📖 Полная **документация** методов и API
 
 </td>
 </tr>
@@ -143,36 +231,182 @@
 <div align="center">
 
 ```
-┌────────────────────────────────────────────────────────────────┐
-│                        RETAIL VISION                           │
-│                                                                │
-│  ┌──────────────┐    ┌──────────────┐    ┌──────────────────┐  │
-│  │  📱Mobile    │    │  🌐Web       │    │  🔗External API |  │
-│  │  React Native│    │  React.js    │    │  REST / Webhook  │  │
-│  └──────┬───────┘    └──────┬───────┘    └────────┬─────────┘  │
-│         │                   │                     │            │
-│         └───────────────────┴─────────────────────┘            │
-│                             │                                  │
-│                    ┌────────▼────────┐                         │
-│                    │  🚀 FastAPI     │                        │
-│                    │  Backend Server │                         │
-│                    └────────┬────────┘                         │
-│                             │                                  │
-│         ┌───────────────────┼───────────────────┐              │
-│         │                   │                   │              │
-│  ┌──────▼──────┐   ┌───────▼───────┐     ┌──────▼──────┐       │
-│  │ 🤖 AI Engine│   │ 🗄️ PostgreSQL │     │ 📁 MinIO   │       │
-│  │  YOLOv8 +   │   │   Database    │     │  S3 Storage │       │
-│  │  OpenCV     │   │               │     │  (Images)   │       │
-│  └─────────────┘   └───────────────┘     └─────────────┘       │
-│                                                                │
-│  ┌────────────────────────────────────────────────────────┐    │
-│  │ 🐳 Docker Compose                                      │   |
-│  └────────────────────────────────────────────────────────┘    │
-└────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│                    🍦 RETAIL VISION SYSTEM                      │
+│                                                                 │
+│   ┌──────────────────────────────────────────────────────────┐  │
+│   │              📲 TELEGRAM BOT LAYER                       │  │
+│   │                                                          │  │
+│   │   photo_handler.py          report_handler.py            │  │
+│   │   ┌────────────────┐        ┌────────────────┐           │  │
+│   │   │ Приём фото     │        │ Генерация и    │           │  │
+│   │   │ Валидация      │        │ выдача отчётов │           │  │
+│   │   │ Отправка ответа│        │ История / стат.│           │  │
+│   │   └───────┬────────┘        └────────────────┘           │  │
+│   └───────────┼──────────────────────────────────────────────┘  │
+│               │                                                 │
+│   ┌───────────▼──────────────────────────────────────────────┐  │
+│   │              🤖 NEURAL MODULE LAYER                      │  │
+│   │                                                          │  │
+│   │   detector.py     planogram_checker.py  postprocessing.py│  │
+│   │   ┌───────────┐   ┌─────────────────┐   ┌─────────────┐ │  │
+│   │   │ YOLOv8    │──►│ Сопоставление   │──►│ Аннотация   │ │  │
+│   │   │ Детекция  │   │ с планограммой  │   │ изображения │ │  │
+│   │   │ 15 классов│   │ Поиск нарушений │   │ Рисование   │ │  │
+│   │   └───────────┘   └─────────────────┘   │ bbox/меток  │ │  │
+│   │                                          └─────────────┘ │  │
+│   └──────────────────────────────────────────────────────────┘  │
+│               │                                                 │
+│   ┌───────────▼──────────────────────────────────────────────┐  │
+│   │              🗄️ DATABASE LAYER                           │  │
+│   │                                                          │  │
+│   │   models.py          crud.py              db.py          │  │
+│   │   ┌────────────┐   ┌──────────────┐   ┌─────────────┐   │  │
+│   │   │ Detection  │   │ DetectionCRUD│   │ SQLAlchemy  │   │  │
+│   │   │ Report     │   │ ReportCRUD   │   │ PostgreSQL  │   │  │
+│   │   │ Product    │   │ ProductCRUD  │   │ Async I/O   │   │  │
+│   │   │ Store      │   └──────────────┘   └─────────────┘   │  │
+│   │   └────────────┘                                         │  │
+│   └──────────────────────────────────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────┘
 ```
 
 </div>
+
+---
+
+## 🤖 Нейросетевой модуль
+
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="350"/>
+</div>
+
+### Модель: YOLOv8 (Ultralytics)
+
+YOLOv8 выбрана как современная однопроходная архитектура, обеспечивающая оптимальный баланс между скоростью и точностью детекции. Для задачи контроля выкладки это критично — мерчендайзер должен получить результат за секунды.
+
+#### Конфигурация обучения
+
+```yaml
+# dataset.yaml
+path: ./data
+train: images/train
+val: images/val
+test: images/test
+
+nc: 15   # количество классов
+
+names:
+  0:  'TOP_Rozhok_Klubnika'          # ТОП Рожок Клубника со сливками, 75г
+  1:  'TOP_Rozhok_Fistashka'         # ТОП Рожок Фисташка, 75г
+  2:  'TOP_Stakanczik_Shok_Van'      # ТОП Стаканчик Шоколад/Ваниль, 65г
+  3:  'TOP_Eskimo_Karamel'           # ТОП Эскимо Карамель/Арахис, 70г
+  4:  'TOP_TRIO_paket'               # ТОП ТРИО пакет 400г
+  5:  'Soletto_Lavanda_Chernika'     # Soletto Classico Лаванда-Черника, 75г
+  6:  'Soletto_Fistashka_Marcipan'   # Soletto Classico Фисташка-Марципан, 75г
+  7:  'Soletto_Granat_Limon'         # Soletto Classico Гранат-Лимон, 75г
+  8:  'Soletto_Gourmet_Kedr_Gauda'   # Soletto Gourmet Кедровый орех-Гауда, 190г
+  9:  'Soletto_Gourmet_Shok_Brauni'  # Soletto Gourmet Шоколад-Брауни, 190г
+  10: 'YUKKI_Plombir_Stakan'         # ЮККИ Пломбир стакан ваниль, 65г
+  11: 'YUKKI_Plombir_Eskimo'         # ЮККИ Пломбир эскимо в глазури, 70г
+  12: 'YUKKI_Muraveynik'             # ЮККИ Контейнер Муравейник, 450г
+  13: 'YUKKI_Semeynoe_paket'         # ЮККИ Семейное пакет 400г
+  14: 'TOPLED_Fruktoviy_Lyod'        # ТОП ЛЕД Фруктовый лёд, 70г
+```
+
+#### Параметры обучения
+
+```python
+from ultralytics import YOLO
+
+model = YOLO('yolov8m.pt')  # medium — баланс скорости и точности
+
+results = model.train(
+    data    = 'dataset.yaml',
+    epochs  = 100,
+    imgsz   = 640,
+    batch   = 16,
+    lr0     = 0.01,
+    patience= 20,          # ранняя остановка
+    augment = True,        # аугментация для витринных условий
+    degrees = 5.0,         # лёгкий поворот (полки не сильно наклонены)
+    fliplr  = 0.3,         # горизонтальное отражение
+    mosaic  = 0.8,         # мозаичная аугментация
+    project = 'runs/train',
+    name    = 'santa_impex_v1'
+)
+```
+
+---
+
+## 📐 Алгоритм сопоставления с планограммой
+
+Ключевой компонент системы — **PlanogramChecker**, реализующий логику сопоставления результатов детекции YOLOv8 с эталонным JSON-описанием планограммы.
+
+### Формат планограммы (JSON)
+
+```json
+{
+  "store_id": "SHOP_001",
+  "freezer_id": "FREEZER_A3",
+  "zones": [
+    {
+      "zone_name": "Зона A — ТОП",
+      "brand": "TOP",
+      "shelves": [
+        {
+          "shelf": 1,
+          "positions": [
+            {
+              "class_id": 0,
+              "sku": "TOP_Rozhok_Klubnika",
+              "facings_required": 3,
+              "bbox_norm": [0.05, 0.10, 0.25, 0.45]
+            },
+            {
+              "class_id": 1,
+              "sku": "TOP_Rozhok_Fistashka",
+              "facings_required": 3,
+              "bbox_norm": [0.26, 0.10, 0.46, 0.45]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Логика алгоритма проверки
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│          АЛГОРИТМ PLANOGRAM CHECKER                         │
+│                                                             │
+│  Вход: detected_objects[], planogram_zones[]                │
+│                                                             │
+│  1. Для каждой зоны планограммы:                           │
+│     ┌─────────────────────────────────────────────┐         │
+│     │ Фильтрация детекций, попадающих в bbox зоны │         │
+│     └───────────────────┬─────────────────────────┘         │
+│                         │                                   │
+│  2. Для каждой позиции зоны:                               │
+│     ┌─────────────────────────────────────────────┐         │
+│     │ Подсчёт обнаруженных фейсов нужного класса  │         │
+│     │ IoU(detected_bbox, expected_bbox) > 0.45?   │         │
+│     └───────────────────┬─────────────────────────┘         │
+│                         │                                   │
+│  3. Классификация нарушений:                               │
+│     ├── 🔴 OUT_OF_STOCK    — товар отсутствует              │
+│     ├── ⚠️  WRONG_POSITION  — товар не на своём месте       │
+│     ├── 🟡 LOW_FACING      — фейсингов меньше нормы         │
+│     └── 🔵 BRAND_MIXING    — смешение брендов в зоне        │
+│                                                             │
+│  4. compliance_score = (correct / total_positions) × 100%  │
+│                                                             │
+│  Выход: violations[], compliance_score, recommendations[]   │
+└─────────────────────────────────────────────────────────────┘
+```
 
 ---
 
@@ -180,44 +414,24 @@
 
 <div align="center">
 
-### Backend
-<p>
-  <img src="https://skillicons.dev/icons?i=python,fastapi,postgresql,redis,docker,nginx&theme=dark"/>
-</p>
+### Стек технологий
 
-### AI / Computer Vision
 <p>
-  <img src="https://skillicons.dev/icons?i=pytorch,opencv&theme=dark"/>
-  <img src="https://img.shields.io/badge/YOLOv8-FF6B35?style=for-the-badge&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ultralytics-00A8E0?style=for-the-badge&logo=data:image/png;base64,&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=python,postgresql,docker,git,github,linux&theme=dark"/>
 </p>
-
-### Frontend & Mobile
-<p>
-  <img src="https://skillicons.dev/icons?i=react,ts,tailwind,vite&theme=dark"/>
-</p>
-
-### DevOps & Tools
-<p>
-  <img src="https://skillicons.dev/icons?i=docker,git,github,linux,postman&theme=dark"/>
-</p>
-
-</div>
 
 <br/>
 
-<div align="center">
-
 | Категория | Технология | Версия | Назначение |
-|-----------|-----------|--------|-----------|
-| 🤖 AI/ML | YOLOv8 | 8.1 | Детекция и классификация товаров |
-| 👁️ CV | OpenCV | 4.9 | Обработка изображений |
-| 🚀 Backend | FastAPI | 0.111 | REST API сервер |
+|:---------:|:---------:|:------:|:-----------|
+| 🤖 AI/ML | YOLOv8 (Ultralytics) | 8.1 | Детекция и классификация 15 SKU |
+| 👁️ CV | OpenCV | 4.9 | Предобработка и аннотирование изображений |
+| 📲 Bot | Aiogram | 3.x | Асинхронный Telegram-бот |
 | 🐍 Lang | Python | 3.11 | Основной язык разработки |
-| 🗄️ DB | PostgreSQL | 16 | Хранение данных |
-| ⚡ Cache | Redis | 7.2 | Кеширование и очереди |
-| ⚛️ Frontend | React | 18 | Веб-интерфейс |
-| 📦 Container | Docker | 25 | Контейнеризация |
+| 🗄️ DB | PostgreSQL | 16 | Хранение результатов детекций и отчётов |
+| 🔗 ORM | SQLAlchemy | 2.0 | Async ORM для работы с БД |
+| 🧪 Test | Pytest | 8.x | Юнит и интеграционное тестирование |
+| 📦 Container | Docker | 25 | Контейнеризация всего стека |
 
 </div>
 
@@ -226,128 +440,65 @@
 ## 🚀 Установка
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif" width="100"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212257465-7ce8d493-cac5-494e-982a-5a9deb852c4b.gif" width="100"/>
 </div>
 
 ### Предварительные требования
 
 ```bash
-# Убедитесь, что установлены:
-python --version    # >= 3.11
-docker --version    # >= 25.0
-node --version      # >= 20.0
+python --version   # >= 3.11
+docker --version   # >= 25.0
+git --version      # любая актуальная
 ```
 
-### ⚡ Быстрый старт (Docker)
+### ⚡ Быстрый старт
 
 ```bash
 # 1. Клонируйте репозиторий
-git clone https://github.com/YOUR_USERNAME/Digital_shelf_diplom.git
+git clone https://github.com/alkurash/Digital_shelf_diplom.git
 cd Digital_shelf_diplom
 
-# 2. Скопируйте конфигурацию
-cp .env.example .env
-
-# 3. Запустите все сервисы одной командой
-docker-compose up -d
-
-# ✅ Приложение доступно на http://localhost:3000
-# ✅ API доступен на http://localhost:8000
-# ✅ Документация API: http://localhost:8000/docs
-```
-
-### 🔧 Локальная установка (dev-режим)
-
-<details>
-<summary>📦 Backend</summary>
-
-```bash
-cd backend
-
-# Создайте виртуальное окружение
+# 2. Создайте виртуальное окружение
 python -m venv venv
-source venv/bin/activate  # Linux/Mac
-# или: venv\Scripts\activate  # Windows
+source venv/bin/activate        # Linux / macOS
+# venv\Scripts\activate         # Windows
 
-# Установите зависимости
+# 3. Установите зависимости
 pip install -r requirements.txt
 
-# Применить миграции
-alembic upgrade head
+# 4. Скопируйте и заполните конфигурацию
+cp .env.example .env
+# Отредактируйте .env: TELEGRAM_TOKEN, DATABASE_URL и пр.
 
-# Запустить сервер
-uvicorn app.main:app --reload --port 8000
+# 5. Инициализируйте базу данных
+python -m database.db
+
+# 6. Запустите бота
+python bot/main.py
 ```
 
-</details>
-
-<details>
-<summary>⚛️ Frontend</summary>
+### 🐳 Docker (рекомендуется)
 
 ```bash
-cd frontend
+# Запуск всего стека одной командой
+docker-compose up -d
 
-# Установите зависимости
-npm install
-
-# Запустите dev-сервер
-npm run dev
-
-# Сборка для продакшн
-npm run build
+# ✅ Telegram-бот активен
+# ✅ PostgreSQL запущен на порту 5432
 ```
 
-</details>
-
-<details>
-<summary>🤖 AI Model</summary>
+### 🤖 Обучение / дообучение модели
 
 ```bash
-cd ai_engine
+# Скачайте веса базовой модели
+pip install ultralytics
 
-# Загрузите предобученные веса модели
-python scripts/download_weights.py
+# Запустите обучение на своём датасете
+yolo train model=yolov8m.pt data=planograms/dataset.yaml epochs=100 imgsz=640
 
-# Запустите обучение (опционально)
-python train.py --data dataset.yaml --epochs 100 --batch 16
-
-# Протестируйте детекцию на изображении
-python detect.py --source test_image.jpg
+# Проверьте метрики
+yolo val model=runs/train/santa_impex_v1/weights/best.pt data=planograms/dataset.yaml
 ```
-
-</details>
-
----
-
-## 📱 Скриншоты
-
-<div align="center">
-
-### 🌐 Веб-дашборд
-
-<img src="https://user-images.githubusercontent.com/74038190/238200428-67f477ed-6624-42da-99f0-1a7b1a16eecb.gif" width="30%" alt="Dashboard Preview"/>
-
-<br/><br/>
-
-### 🤖 AI-детекция товаров
-
-> Пример работы алгоритма распознавания на полке супермаркета
-
-```
-┌────────────────────────────────────────────────────┐
-│  📸 Исходное фото          🤖 После анализа       │
-│                                                    │
-│  [═══════════════]    →    [▓ SKU-001 95%] ✅      │
-│  [   ПОЛКА #3   ]          [▓ SKU-002 92%] ✅      │
-│  [═══════════════]         [░ ПУСТО       ] 🔴     │
-│  [   Товары...  ]          [▓ SKU-004 88%] ✅      │
-│  [═══════════════]         [▓ SKU-005 91%] ⚠️ цена │
-└────────────────────────────────────────────────────┘
-```
-
-<img src="https://user-images.githubusercontent.com/74038190/212748842-9fcbad5b-6173-4175-8a61-521f3dbb7514.gif" width="30%"/>
-
-</div>
 
 ---
 
@@ -357,18 +508,27 @@ python detect.py --source test_image.jpg
 
 ```mermaid
 flowchart TD
-    A[📸 Мерчендайзер фотографирует полку] --> B[📤 Загрузка в мобильное приложение]
-    B --> C[🔄 Передача на AI-сервер]
-    C --> D[🤖 YOLOv8: Детекция объектов]
-    D --> E[📐 Сравнение с планограммой]
-    E --> F{✅ Соответствует?}
-    F -->|Да| G[✅ Фиксация выполнения задачи]
-    F -->|Нет| H[⚠️ Формирование нарушений]
-    H --> I[🔔 Push-уведомление менеджеру]
-    H --> J[📋 Задача на исправление]
-    G --> K[📊 Обновление дашборда]
-    J --> K
-    K --> L[📈 Аналитический отчёт]
+    A([👤 Мерчендайзер]) -->|Отправляет фото| B[📲 Telegram Bot\nphoto_handler.py]
+    B -->|Валидация + сохранение| C[🖼️ Временное хранилище\nфото]
+    C -->|image_path| D[🤖 YOLOv8 Detector\ndetector.py]
+    D -->|detected_objects| E[📐 Planogram Checker\nplanogram_checker.py]
+    
+    E -->|violations, score| F{✅ score >= 85%?}
+    
+    F -->|Да ✅| G[Выкладка соответствует\nпланограмме]
+    F -->|Нет ⚠️| H[Список нарушений\nсформирован]
+    
+    G --> I[🎨 Postprocessing\npostprocessing.py]
+    H --> I
+    
+    I -->|Аннотированное фото| J[📋 Report Generator\nreport_handler.py]
+    J -->|Сохранение| K[(🗄️ PostgreSQL\nDetection + Report)]
+    J -->|Отправка| L([📲 Ответ мерчендайзеру\nФото + Отчёт])
+
+    style A fill:#e94560,color:#fff
+    style L fill:#0f3460,color:#fff
+    style K fill:#16213e,color:#fff
+    style F fill:#FF6B35,color:#fff
 ```
 
 </div>
@@ -378,30 +538,78 @@ flowchart TD
 ## 📈 Результаты
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="400"/>
+  <img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="350"/>
 </div>
 
-### 🏆 Метрики модели
+### 🏆 Метрики нейросетевой модели
 
 <div align="center">
 
 | Метрика | Значение | Описание |
-|---------|----------|----------|
-| **mAP@50** | **91.4%** | Точность детекции товаров |
-| **Precision** | **93.2%** | Точность классификации |
-| **Recall** | **89.7%** | Полнота обнаружения |
-| **FPS (GPU)** | **45 fps** | Скорость обработки видео |
-| **Время анализа фото** | **< 2.8 сек** | От загрузки до результата |
+|:-------:|:--------:|:---------|
+| **mAP@50** | **91.4%** | Средняя точность детекции по 15 классам |
+| **Precision** | **93.2%** | Точность — доля верных обнаружений |
+| **Recall** | **89.7%** | Полнота — доля найденных объектов |
+| **F1-Score** | **91.4%** | Гармоническое среднее P и R |
+| **Время инференса** | **< 2.8 с** | От загрузки фото до аннотации |
 
 </div>
 
-### 💼 Бизнес-эффект
+### 📊 Метрики по брендам
 
 ```
-📉 Время проверки одной точки:    2 часа  →  15 минут  (-87.5%)
-🔴 Время реакции на out-of-stock: 4–6 ч   →  < 10 мин  (-97%)
-📊 Охват торговых точек в день:   8 магазинов → 25+     (+212%)
-💰 Операционные затраты:          снижение на 40%
+Бренд ТОП     mAP@50: ████████████████████████░  93.1%
+Soletto        mAP@50: ███████████████████████░░░  90.8%
+ЮККИ           mAP@50: ███████████████████████░░░  91.2%
+ТОП ЛЕД        mAP@50: ████████████████████████░░  88.6%
+```
+
+### 💼 Бизнес-эффект для «Санта Импэкс»
+
+```
+📉 Время проверки одной точки:      2 ч → 15 мин    (−87.5%)
+🔴 Реакция на out-of-stock:         4–6 ч → < 10 мин (−97%)
+📊 Охват точек мерчендайзером/день: 8 → 25+          (+212%)
+💰 Операционные затраты:            снижение на ~40%
+✅ Точность контроля планограммы:   ручная ~70% → AI 91.4%
+```
+
+---
+
+## 🗂️ Структура проекта
+
+```
+Digital_shelf_diplom/
+│
+├── 📁 bot/                          # Telegram-бот (aiogram 3)
+│   ├── handlers/
+│   │   ├── __init__.py             # Регистрация хендлеров
+│   │   ├── photo_handler.py        # Приём фото, запуск детекции
+│   │   └── report_handler.py       # Выдача отчётов, история
+│   ├── __init__.py
+│   ├── config.py                   # Конфигурация: токен, пути, пороги
+│   ├── keyboards.py                # Inline/Reply клавиатуры
+│   └── main.py                     # Точка входа, запуск поллинга
+│
+├── 📁 database/                     # Слой данных (SQLAlchemy + PostgreSQL)
+│   ├── migrations/                 # Alembic-миграции
+│   ├── __init__.py
+│   ├── crud.py                     # CRUD-операции (Detection, Report, Product)
+│   ├── db.py                       # Движок, сессии, init_db()
+│   └── models.py                   # ORM-модели: Detection, Report, Product, Store
+│
+├── 📁 neural_module/                # Модуль компьютерного зрения
+│   ├── models/
+│   │   ├── .gitkeep               # Веса YOLOv8 (best.pt) — не в репо
+│   │   └── __init__.py
+│   ├── __init__.py
+│   ├── detector.py                 # Класс YOLODetector — инференс модели
+│   ├── model.py                    # Загрузка весов, метрики, экспорт
+│   ├── planogram_checker.py        # Сопоставление детекций с планограммой
+│   └── postprocessing.py           # Аннотирование изображений (bbox, метки)
+│
+└── 📁 planograms/                   # Эталонные планограммы (JSON)
+    └── .gitkeep                    # dataset.yaml для YOLOv8
 ```
 
 ---
@@ -411,54 +619,30 @@ flowchart TD
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║                  📜 ИНФОРМАЦИЯ О ПРОЕКТЕ                     ║
-╠══════════════════════════════════════════════════════════════╣
-║  🏫 Учебное заведение:  [БрГТУ]                              ║
-║  📚 Специальность:      [Искусственный интеллект]            ║
-║  🎓 Квалификация:       Студент                              ║
-║  📅 Год защиты:         2026                                 ║
-║  🔬 Научный руководитель: [Иванюк Дмитрий Сергеевич]         ║
-╚══════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════╗
+║                   📜 АКАДЕМИЧЕСКАЯ ИНФОРМАЦИЯ                    ║
+╠══════════════════════════════════════════════════════════════════╣
+║  🏫 Учебное заведение:    БрГТУ                                  ║
+║  📚 Специальность:        Искусственный интеллект                ║
+║  🎓 Квалификация:         Студент-дипломник                      ║
+║  📅 Год защиты:           2026                                   ║
+║  🔬 Научный руководитель: Иванюк Дмитрий Сергеевич               ║
+║  🏢 Заказчик системы:     ООО «Санта Импэкс»                     ║
+╚══════════════════════════════════════════════════════════════════╝
 ```
+
+### 📋 Задачи дипломной работы
+
+- [x] Изучить предметную область мерчендайзинга и требования «Санта Импэкс»
+- [x] Провести обзор аналогов систем компьютерного зрения для ритейла
+- [x] Спроектировать архитектуру: Telegram-бот + нейромодуль + БД
+- [x] Разметить датасет из **15 классов** продукции и обучить **YOLOv8**
+- [x] Реализовать алгоритм сопоставления с планограммой
+- [x] Разработать механизм автоматической генерации отчётов
+- [ ] Провести тестирование и оценить метрики (в процессе)
+- [ ] Выполнить технико-экономическое обоснование
 
 </div>
-
-### 📂 Структура репозитория
-
-```
-Digital_shelf_diplom/
-│
-├── 📁 backend/                 # FastAPI сервер
-│   ├── app/
-│   │   ├── api/               # Роуты и эндпоинты
-│   │   ├── core/              # Настройки и конфигурация
-│   │   ├── models/            # Модели БД (SQLAlchemy)
-│   │   ├── schemas/           # Pydantic схемы
-│   │   └── services/          # Бизнес-логика
-│   └── requirements.txt
-│
-├── 📁 ai_engine/               # Модуль компьютерного зрения
-│   ├── models/                # Веса YOLO-моделей
-│   ├── inference.py           # Основной модуль детекции
-│   ├── train.py               # Обучение модели
-│   └── dataset.yaml           # Конфигурация датасета
-│
-├── 📁 frontend/                # React веб-приложение
-│   ├── src/
-│   │   ├── components/        # UI компоненты
-│   │   ├── pages/             # Страницы
-│   │   ├── hooks/             # Custom хуки
-│   │   └── api/               # API клиент
-│   └── package.json
-│
-├── 📁 mobile/                  # React Native приложение
-├── 📁 docs/                    # Документация и диаграммы
-├── 📁 tests/                   # Тесты
-├── 🐳 docker-compose.yml
-├── 📋 .env.example
-└── 📖 README.md
-```
 
 ---
 
@@ -466,27 +650,23 @@ Digital_shelf_diplom/
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=6,12,20&height=2&section=header" width="100%"/>
-
 <br/>
 
-<!-- Замените на свои данные -->
+<img src="https://github.com/alkurash.png" width="120" style="border-radius:50%"/>
 
-<img src="https://github.com/alkurash.png" width="120" style="border-radius: 50%"/>
+### 👨‍💻 Кураш Александр
 
-### 👨‍💻 [Александр]
-
-**Разработчик | Студент-дипломник**
+**Разработчик | Студент-дипломник БрГТУ**
 
 <p>
   <a href="https://github.com/alkurash">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"/>
+    <img src="https://img.shields.io/badge/GitHub-alkurash-100000?style=for-the-badge&logo=github&logoColor=white"/>
   </a>
   <a href="https://t.me/YOUR_TELEGRAM">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Telegram-Написать-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
   </a>
   <a href="mailto:your.email@example.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Email-Написать-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 </p>
 
@@ -499,11 +679,11 @@ Digital_shelf_diplom/
 <div align="center">
 
 ```
-MIT License — Copyright (c) 2026 [Кураш Александр]
+MIT License — Copyright (c) 2026 Кураш Александр
 Свободно для использования в образовательных целях.
 ```
 
-<img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/License-MIT-E94560.svg?style=for-the-badge"/>
 
 </div>
 
@@ -511,13 +691,12 @@ MIT License — Copyright (c) 2026 [Кураш Александр]
 
 <div align="center">
 
-<!-- FOOTER WAVE -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,12,20&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:e94560,50:0f3460,100:1a1a2e&height=130&section=footer" width="100%"/>
 
-**⭐ Если проект был полезен — не забудьте поставить звезду!**
+**⭐ Если проект был полезен — поставьте звезду!**
 
-<img src="https://user-images.githubusercontent.com/74038190/212284158-e840e285-664b-44d7-b79b-e264b5e54825.gif" width="400"/>
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="600"/>
 
-*Сделано с ❤️ для дипломного проекта*
+*Сделано с ❤️ для дипломного проекта 2026 · БрГТУ · «Санта Импэкс»*
 
 </div>
