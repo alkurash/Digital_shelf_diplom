@@ -4,7 +4,11 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=E94560&center=true&vCenter=true&width=700&lines=YOLOv8+%E2%80%A2+Computer+Vision+%E2%80%A2+Telegram+Bot;Автоматический+контроль+выкладки+товаров;15+классов+продукции+ТОП%2C+Soletto%2C+ЮККИ;mAP%4050+%3D+91.4%25+%E2%80%94+точность+детекции" alt="Typing SVG"/>
+<!-- ANIMATED TYPING SVG -->
+![Smart Merchandising](https://img.shields.io/badge/Platform-Smart_Merchandising-58A6FF?style=for-the-badge&logo=aiq)
+![AI Analysis](https://img.shields.io/badge/Analysis-AI--Powered-success?style=for-the-badge&logo=tensorflow)
+
+<br/>
 
 <br/><br/>
 
