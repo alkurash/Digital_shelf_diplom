@@ -5,3 +5,4 @@ __pycache__/
 *.h5
 neural_module/models/*
 !neural_module/models/.gitkeep
+config.py
