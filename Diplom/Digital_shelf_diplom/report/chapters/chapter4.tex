@@ -1,7 +1,338 @@
-\chapter{ТЕСТИРОВАНИЕ}
+\setcounter{chaptercntr}{4}
 
-\section{Результаты обучения нейронной сети}
-% TODO: графики loss/accuracy, метрики mAP
+\sectionbreak {
+\gostTitleFont
+\redline
+\thechaptercntr . 
+РАЗРАБОТКА, ОБУЧЕНИЕ И ОЦЕНКА МОДЕЛИ НЕЙРОННОЙ СЕТИ
+}
 
-\section{Тестирование работы системы}
-% TODO: тест-кейсы, результаты
+\titlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Выбор архитектуры нейронной сети для детекции объектов
+} \addtocounter{subchaptercntr}{1} 
+
+\subtitlespace
+
+{\gostFont
+
+  \par \redline Для решения задачи детекции и классификации упаковок мороженого на полках холодильного оборудования необходимо выбрать подходящую архитектуру нейронной сети. Задача относится к классу задач обнаружения объектов (object detection), в рамках которой требуется одновременно локализовать объекты на изображении и определить их класс.
+
+  \par \redline Среди ключевых подходов к детекции объектов выделяют двухэтапные (two-stage) и однопроходные (one-stage) детекторы. Двухэтапные детекторы, такие как Faster R-CNN, сначала формируют предложения регионов (region proposals), а затем классифицируют каждый из них. Такой подход обеспечивает высокую точность, однако имеет существенный недостаток: скорость инференса недостаточна для работы в режиме реального времени на мобильных устройствах.
+
+  \par \redline Однопроходные детекторы — SSD, RetinaNet, а также семейство YOLO (You Only Look Once) — выполняют локализацию и классификацию за один проход через сеть. Это обеспечивает значительно более высокую скорость при сравнимой с двухэтапными методами точности. Учитывая требование к работе приложения «Retail Vision» непосредственно на мобильном устройстве мерчендайзера в режиме реального времени, выбор в пользу однопроходного детектора является очевидным.
+
+  \par \redline Среди однопроходных детекторов особого внимания заслуживает семейство моделей YOLO. Начиная с первой версии 2016 года, архитектура YOLO прошла значительный путь развития. Актуальной на момент написания работы является версия \textbf{YOLOv8}, разработанная компанией Ultralytics. По сравнению с предшественниками YOLOv8 предлагает улучшенный backbone на основе CSPDarknet с блоками C2f, безанкорный (anchor-free) механизм детекции и разделённые головы классификации и регрессии (decoupled head). Совокупность данных улучшений позволяет YOLOv8 достигать более высокого значения метрики mAP при меньшем времени инференса по сравнению с YOLOv5 и YOLOv7.
+
+  \par \redline YOLOv8 предлагается в нескольких конфигурациях по размеру модели: nano (n), small (s), medium (m), large (l) и extra-large (x). Для использования на мобильном устройстве наиболее подходящей является конфигурация \textbf{YOLOv8n} (nano), обеспечивающая минимальный размер модели и наибольшую скорость инференса при приемлемой точности детекции. Таким образом, для разработки системы «Retail Vision» выбрана нейронная сеть \textbf{YOLOv8n}.
+
+  \par
+}
+
+\subtitlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Обзор архитектуры YOLOv8
+} \addtocounter{subchaptercntr}{1} 
+  
+\subtitlespace
+  
+{\gostFont
+
+  \par \redline Архитектура YOLOv8 состоит из трёх основных компонентов: backbone, neck и detection head. 
+  \par \redline Общая схема архитектуры представлена на рисунке \thechaptercntr .\theimagecntr.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=145mm]{images/yolov8_architecture.png}
+    \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Архитектура нейронной сети YOLOv8.}
+    \label{fig:yolov8arch}
+  \end{figure} \addtocounter{imagecntr}{1}
+
+  \par \redline \textbf{Backbone} отвечает за извлечение признаков из входного изображения. В YOLOv8 используется модифицированный CSPDarknet с блоками \textbf{C2f} (Cross Stage Partial с двумя ветвями). Блок C2f разделяет поток признаков на две ветви: одна проходит через серию bottleneck-блоков, другая — напрямую конкатенируется с результатом. Такой подход позволяет сохранять градиентный поток при обратном распространении ошибки и снижает риск затухания градиентов при обучении глубоких сетей.
+
+  \par \redline \textbf{Neck} выполняет объединение признаков с различных масштабных уровней backbone с помощью архитектуры \textbf{PAN-FPN} (Path Aggregation Network — Feature Pyramid Network). PAN-FPN реализует двунаправленное объединение признаков: сверху вниз (top-down) для передачи семантической информации от глубоких слоёв к поверхностным, и снизу вверх (bottom-up) для передачи детальной пространственной информации. Это позволяет эффективно детектировать объекты различных размеров — от крупных семейных упаковок (400 г) до небольших эскимо (70 г).
+
+  \par \redline \textbf{Detection head} (голова детекции) в YOLOv8 является разделённой (decoupled): ветви классификации и регрессии координат ограничивающего прямоугольника обрабатываются независимыми свёрточными блоками. В отличие от предыдущих версий YOLO, в YOLOv8 используется \textbf{безанкорный} механизм детекции: сеть напрямую предсказывает смещения относительно центра ячейки сетки, а не относительно предопределённых анкеров. Это упрощает конфигурацию модели и повышает точность локализации.
+
+  \par \redline Входное изображение для YOLOv8 имеет стандартный размер $640 \times 640$ пикселей. Если исходное изображение имеет иные пропорции, применяется letterbox-масштабирование — дополнение изображения серыми полосами без искажения пропорций объектов. Это особенно важно для сохранения корректного соотношения сторон упаковок мороженого, которые имеют характерные вертикальные пропорции (рожки, стаканчики, эскимо).
+
+  \par \redline Выход detection head представляет собой тензор предсказаний, каждый элемент которого содержит координаты ограничивающего прямоугольника $(x_c, y_c, w, h)$, оценку достоверности (confidence score) и вектор вероятностей классов длиной $N_{\mathrm{cls}} = 15$, соответствующий 15 классам SKU продукции Санта Импэкс. После инференса применяется алгоритм \textbf{Non-Maximum Suppression (NMS)}, устраняющий дублирующиеся детекции. Порог IoU для NMS задаётся равным $\mathrm{IoU}_{\mathrm{nms}} = 0{,}45$, порог достоверности — $\mathrm{conf}_{\mathrm{thr}} = 0{,}25$.
+
+  \par
+}
+
+\subtitlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Обучение модели YOLOv8
+} \addtocounter{subchaptercntr}{1} 
+
+\subtitlespace
+
+{\gostFont
+
+  \par \redline Обучение YOLOv8 выполняется методом стохастического градиентного спуска с использованием составной функции потерь. Общая функция потерь при обучении имеет следующий вид и рассчитывается по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $\mathcal{L} = \lambda_{\mathrm{box}} \cdot \mathcal{L}_{\mathrm{box}} + \lambda_{\mathrm{cls}} \cdot \mathcal{L}_{\mathrm{cls}} + \lambda_{\mathrm{dfl}} \cdot \mathcal{L}_{\mathrm{dfl}}$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $\mathcal{L}_{\mathrm{box}}$ {--} потеря регрессии ограничивающего прямоугольника; \\
+      &      & $\mathcal{L}_{\mathrm{cls}}$ {--} потеря классификации; \\
+      &      & $\mathcal{L}_{\mathrm{dfl}}$ {--} Distribution Focal Loss для уточнения координат; \\
+      &      & $\lambda_{\mathrm{box}},\,\lambda_{\mathrm{cls}},\,\lambda_{\mathrm{dfl}}$ {--} весовые коэффициенты соответствующих компонент. \\
+  \end{tabular}
+
+  \par \redline Компонента $\mathcal{L}_{\mathrm{box}}$ основана на метрике CIoU (Complete Intersection over Union), которая учитывает не только площадь пересечения, но и соотношение сторон прямоугольников и расстояние между их центрами. CIoU рассчитывается по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $\mathcal{L}_{\mathrm{box}} = 1 - \mathrm{IoU} + \frac{\rho^2(b, b^{gt})}{c^2} + \alpha_v \cdot v$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $\rho(b, b^{gt})$ {--} евклидово расстояние между центрами предсказанного и истинного прямоугольников; \\
+      &      & $c$ {--} диагональ наименьшего ограничивающего прямоугольника, покрывающего оба прямоугольника; \\
+      &      & $v$ {--} параметр, измеряющий согласованность соотношения сторон; \\
+      &      & $\alpha_v$ {--} весовой коэффициент параметра $v$. \\
+  \end{tabular}
+
+  \par \redline Компонента $\mathcal{L}_{\mathrm{cls}}$ реализована как бинарная кросс-энтропия (Binary Cross-Entropy) для каждого класса и рассчитывается по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $\mathcal{L}_{\mathrm{cls}} = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i)\log(1 - \hat{y}_i) \right]$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $N$ {--} количество предсказаний; \\
+      &      & $y_i$ {--} истинная метка класса ($0$ или $1$); \\
+      &      & $\hat{y}_i$ {--} предсказанная вероятность принадлежности к классу. \\
+  \end{tabular}
+
+  \par \redline Обучение модели выполняется с применением оптимизатора \textbf{SGD} (стохастический градиентный спуск) с моментом. Начальная скорость обучения задаётся как $\alpha_0 = 0{,}01$ и изменяется по косинусному расписанию (cosine annealing) по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $\alpha_t = \alpha_{\min} + \frac{1}{2}(\alpha_0 - \alpha_{\min})\left(1 + \cos\!\left(\frac{t}{T}\pi\right)\right)$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $\alpha_t$ {--} скорость обучения на итерации $t$; \\
+      &      & $\alpha_{\min}$ {--} минимальная скорость обучения ($\alpha_{\min} = 0{,}0001$); \\
+      &      & $T$ {--} общее количество итераций обучения. \\
+  \end{tabular}
+
+  \par \redline Обучение выполняется в течение $eps = 100$ эпох с размером мини-батча $batch = 16$. Для предотвращения переобучения на относительно небольшом датасете применяется аугментация данных, включённая непосредственно в пайплайн обучения YOLOv8: случайные изменения яркости, контраста и насыщенности (HSV-аугментация), горизонтальное отражение, mosaic-аугментация (объединение четырёх изображений в одно), а также MixUp. Пример кривых обучения (train loss и validation loss) показан на рисунке \thechaptercntr .\theimagecntr.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=145mm]{images/training_curves.png}
+    \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Кривые обучения модели YOLOv8n на датасете продукции Санта Импэкс.}
+    \label{fig:training_curves}
+  \end{figure} \addtocounter{imagecntr}{1}
+
+  \par
+}
+
+\subtitlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Гиперпараметры модели YOLOv8
+} \addtocounter{subchaptercntr}{1} 
+  
+\subtitlespace
+  
+{\gostFont
+
+  \par \redline Для наиболее полного понимания данного подраздела необходимо разграничить понятия параметров и гиперпараметров модели. \textbf{Параметры модели} {--} это значения, которые модель усваивает в процессе обучения: веса свёрточных фильтров, коэффициенты батч-нормализации и смещения нейронов. \textbf{Гиперпараметры} {--} это параметры, задаваемые исследователем до начала обучения и управляющие процессом обучения, но не усваиваемые моделью самостоятельно.
+
+  \par \redline К основным гиперпараметрам модели YOLOv8n применительно к задаче детекции SKU продукции Санта Импэкс относятся следующие.
+
+  \par \redline \textbf{Входной размер изображения} ($imgsz$) {--} сторона квадратного входного тензора в пикселях. Стандартным значением для YOLOv8 является $imgsz = 640$. Увеличение входного размера повышает точность детекции мелких объектов, однако пропорционально увеличивает время инференса и объём оперативной памяти.
+
+  \par \redline \textbf{Порог достоверности} ($conf$) {--} минимальное значение оценки достоверности, при котором детекция считается положительной. При значении $conf < conf_{\mathrm{thr}}$ детекция отбрасывается. Задаётся как $conf_{\mathrm{thr}} = 0{,}25$ на этапе инференса.
+
+  \par \redline \textbf{Порог IoU для NMS} ($iou$) {--} порог пересечения прямоугольников, используемый в алгоритме Non-Maximum Suppression для объединения дублирующихся детекций. Задаётся как $\mathrm{IoU}_{\mathrm{nms}} = 0{,}45$.
+
+  \par \redline \textbf{Скорость обучения} ($lr0$) {--} начальная скорость обучения оптимизатора SGD. Задаётся как $lr0 = 0{,}01$.
+
+  \par \redline \textbf{Количество эпох} ($epochs$) {--} количество полных проходов оптимизатора по обучающей выборке. Задаётся как $epochs = 100$.
+
+  \par \redline \textbf{Размер мини-батча} ($batch$) {--} количество изображений, обрабатываемых за один шаг оптимизации. Задаётся как $batch = 16$.
+
+  \par \redline Большинство гиперпараметров определяется экспериментально методом проб и ошибок, либо с использованием автоматического подбора (hyperparameter tuning). Библиотека Ultralytics предоставляет встроенный инструмент автоматической настройки гиперпараметров на основе эволюционных алгоритмов, который может быть использован для финальной оптимизации модели.
+
+  \par 
+}
+
+\subtitlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Разработка мобильного приложения «Retail Vision»
+} \addtocounter{subchaptercntr}{1} 
+  
+\subtitlespace
+  
+{\gostFont
+
+  \par \redline После обучения и валидации модели YOLOv8n разработано мобильное приложение «Retail Vision», обеспечивающее работу мерчендайзеров компании Санта Импэкс непосредственно в торговых точках. Приложение реализовано на фреймворке \textbf{React Native}, что обеспечивает единую кодовую базу для платформ \textbf{Android} и \textbf{iOS}.
+
+  \par \redline Для выполнения инференса YOLOv8 непосредственно на мобильном устройстве обученная модель экспортируется из формата PyTorch (.pt) в формат \textbf{ONNX} (Open Neural Network Exchange). Инференс ONNX-модели в приложении React Native выполняется через библиотеку \textbf{ONNX Runtime Mobile}, интегрированную посредством нативных модулей. Такой подход обеспечивает \textbf{offline-first} работу приложения: все вычисления производятся локально на устройстве без передачи изображений на внешние серверы, что критически важно в условиях ограниченного интернет-соединения в торговых точках.
+
+  \par \redline Архитектура приложения построена на паттерне \textbf{MVVM} (Model-View-ViewModel) и включает следующие основные модули: модуль камеры (Camera Module), модуль предобработки изображений (Preprocessing Module), модуль инференса (Inference Module), модуль сравнения с планограммой (Planogram Module) и модуль отчётности (Report Module).
+  \par \redline Использование паттерна MVVM позволяет достичь высокой степени реактивности интерфейса: состояние экрана (View) автоматически обновляется при изменении данных в ViewModel, которые поступают от модулей обработки. В частности, ViewModel управляет жизненным циклом сессии распознавания, координируя последовательный вызов функций препроцессинга и инференса. Это гарантирует разделение бизнес-логики анализа изображений от логики отображения, что упрощает масштабирование приложения при добавлении новых типов SKU или изменении алгоритмов сравнения.
+
+  \par \redline Взаимодействие модулей показано на рисунке \thechaptercntr .\theimagecntr.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=240mm, width=90mm]{images/app_dataflow_diagram.png}
+    \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Архитектура мобильного приложения «Retail Vision».}
+    \label{fig:apparch}
+  \end{figure} \addtocounter{imagecntr}{1}
+
+  \par \redline Пайплайн обработки изображения в приложении функционирует следующим образом. Мерчендайзер фотографирует секцию холодильного оборудования. Снимок передаётся в модуль предобработки, где выполняется letterbox-масштабирование до размера $640 \times 640$ пикселей и нормализация значений пикселей в диапазон $[0;\,1]$. Подготовленный тензор передаётся в модуль инференса, где ONNX Runtime выполняет прямой проход через модель YOLOv8n. Полученные предсказания проходят через NMS, после чего результирующие ограничивающие прямоугольники с метками классов накладываются на исходное изображение и отображаются пользователю. Обнаруженные SKU сравниваются с данными планограммы для текущей торговой точки, а отклонения от стандарта выкладки фиксируются в отчёте.
+
+  \par \redline Все три модуля (Camera, Preprocessing, Inference) реализованы как React Native компоненты. Модуль камеры использует библиотеку \textbf{react-native-vision-camera}, обеспечивающую доступ к аппаратной камере устройства с поддержкой захвата кадров в реальном времени. Серверная часть приложения реализована для хранения маршрутов мерчендайзеров, планограмм торговых точек и истории отчётов аудита. Взаимодействие с сервером производится через REST API только при наличии подключения к интернету; при его отсутствии приложение работает с локально закэшированными данными планограмм.
+
+  \par \redline Пример интерфейса приложения с результатами детекции SKU на полке холодильного оборудования показан на рисунке \thechaptercntr .\theimagecntr.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=75mm]{images/app_detection_screen.png}
+    \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Экран детекции SKU в приложении «Retail Vision».}
+    \label{fig:appscreen}
+  \end{figure} \addtocounter{imagecntr}{1}
+
+  \par
+}
+
+\subtitlespace
+
+\subsection*{ 
+  \gostTitleFont
+  \redline
+  \thechaptercntr .\thesubchaptercntr \spc 
+  Тестирование и оценка модели нейронной сети
+} \addtocounter{subchaptercntr}{1} 
+  
+\subtitlespace
+  
+{\gostFont
+
+  \par \redline Тестирование и оценка модели YOLOv8n выполняются на тестовой выборке, сформированной из изображений, не использовавшихся при обучении и валидации. Стандартное разбиение датасета составляет 70\% — обучающая выборка, 15\% — валидационная выборка, 15\% — тестовая выборка.
+
+  \par \redline Основной метрикой оценки качества детекции является \textbf{mAP@0.5} (mean Average Precision при пороге IoU = 0,5). Для каждого из 15 классов SKU строится кривая точность-полнота (Precision-Recall curve), и вычисляется площадь под этой кривой — AP (Average Precision). Итоговая метрика mAP рассчитывается по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $\mathrm{mAP@0.5} = \frac{1}{N_{\mathrm{cls}}} \sum_{i=1}^{N_{\mathrm{cls}}} \mathrm{AP}_i$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $N_{\mathrm{cls}} = 15$ {--} количество классов SKU; \\
+      &      & $\mathrm{AP}_i$ {--} средняя точность для $i$-го класса. \\
+  \end{tabular}
+
+  \par \redline Дополнительно оценивается метрика \textbf{mAP@0.5:0.95} — среднее значение mAP при порогах IoU от 0,5 до 0,95 с шагом 0,05, являющаяся более строгим критерием точности локализации. Также рассчитываются метрики Precision (точность) и Recall (полнота) по формулам (\thechaptercntr .\theformulacntr) и (\thechaptercntr .\theformulacntr) соответственно:
+
+  \formulaspace \par \redline 
+    $\mathrm{Precision} = \frac{TP}{TP + FP}$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \formulaspace \par \redline 
+    $\mathrm{Recall} = \frac{TP}{TP + FN}$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $TP$ {--} количество истинно положительных детекций (True Positive); \\
+      &      & $FP$ {--} количество ложноположительных детекций (False Positive); \\
+      &      & $FN$ {--} количество ложноотрицательных детекций (False Negative). \\
+  \end{tabular}
+
+  \par \redline В процессе тестирования применяется также метрика \textbf{F1-score}, объединяющая Precision и Recall в единый показатель и рассчитываемая по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $F1 = 2 \cdot \frac{\mathrm{Precision} \times \mathrm{Recall}}{\mathrm{Precision} + \mathrm{Recall}}$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \par \redline Оценка производительности на мобильном устройстве включает измерение среднего времени инференса одного изображения $t_{\mathrm{inf}}$ по формуле (\thechaptercntr .\theformulacntr):
+
+  \formulaspace \par \redline 
+    $t_{\mathrm{inf}} = t_{\mathrm{pre}} + t_{\mathrm{forward}} + t_{\mathrm{nms}}$
+    \hfill (\thechaptercntr .\theformulacntr) \redline
+  \formulaspace \addtocounter{formulacntr}{1}
+
+  \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
+      & где  & $t_{\mathrm{pre}}$ {--} время предобработки изображения (ресайз, нормализация); \\
+      &      & $t_{\mathrm{forward}}$ {--} время прямого прохода через нейронную сеть; \\
+      &      & $t_{\mathrm{nms}}$ {--} время выполнения Non-Maximum Suppression. \\
+  \end{tabular}
+
+  \par \redline Целевое суммарное время инференса, обеспечивающее плавный пользовательский опыт, составляет $t_{\mathrm{inf}} \leq 200$ мс на смартфоне среднего ценового сегмента.
+
+  \par \redline Для визуальной оценки качества детекции строится матрица ошибок (confusion matrix) по всем 15 классам SKU, позволяющая 
+  выявить наиболее часто смешиваемые классы. 
+  \par \redline Пример матрицы ошибок и графика PR-кривых по классам приведены на рисунках \thechaptercntr .\theimagecntr \spc и \thechaptercntr .\the\numexpr\theimagecntr+1\relax \spc соответственно. Совокупный анализ данных графиков подтверждает высокую селективность алгоритма и его способность эффективно минимизировать ошибки как первого, так и второго рода. 
+  \par \redline Таким образом, эти метрики служат объективным подтверждением готовности обученной модели к эксплуатации в условиях реальной торговой точки.
+
+  % Далее идут сами блоки рисунков
+
+  % Рисунок 4.6
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{images/confusion_matrix.png}
+      \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Матрица ошибок для классификации SKU.}
+      \label{fig:conf_matrix}
+  \end{figure}
+  \addtocounter{imagecntr}{1} % Увеличиваем счетчик ПОСЛЕ первого рисунка
+
+  % Рисунок 4.7
+  \begin{figure}[H]
+      \centering
+      \includegraphics[width=\textwidth]{images/pr_curve.png}
+      \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Precision-Recall кривые по классам продукции.}
+      \label{fig:pr_curve}
+  \end{figure}
+  \addtocounter{imagecntr}{1} % Увеличиваем счетчик ПОСЛЕ второго рисунка
+
+  \par \redline Итоговый пример визуализации результатов детекции YOLOv8n на тестовом изображении секции холодильного оборудования с продукцией Санта Импэкс представлен на рисунке \thechaptercntr .\theimagecntr.
+  \par \redline На представленном снимке визуализирована работа обученной нейросети в условиях реальной торговой точки. Алгоритм YOLOv8n успешно справляется с плотной выкладкой продукции, идентифицируя SKU даже при частичном перекрытии упаковок или изменении угла обзора. Каждая обнаруженная единица товара выделяется ограничивающей рамкой (bounding box) с указанием наименования класса и показателя уверенности модели (confidence score). Высокие значения этого показателя подтверждают точность детекции и минимизируют риск ложных срабатываний в сложной визуальной среде. Использование такой визуализации позволяет мгновенно конвертировать фотографию витрины в структурированные данные для анализа доступности товаров на полке.
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/detection_result_example.png}
+    \caption*{\gostFont Рисунок \thechaptercntr .\theimagecntr \spc {--} Пример результатов детекции SKU на тестовом изображении.}
+    \label{fig:detresult}
+  \end{figure} \addtocounter{imagecntr}{1}
+
+}
+
+  \par \redline Анализ представленной визуализации подтверждает высокую обобщающую способность модели при работе с реальными объектами в нестандартных условиях освещения и ракурса. Четкая локализация границ упаковок свидетельствует о корректной настройке гиперпараметров обучения и отсутствии значительного эффекта перекрытия (overlap) боксов. Наличие уверенных предсказаний для различных линеек продукции, таких как «ТОП» и «Soletto», демонстрирует стабильность детектора на классах с разной цветовой гаммой и формой. Полученные результаты доказывают применимость выбранного подхода для автоматизации аудита холодильного оборудования. Таким образом, сформированный массив данных детекции готов для передачи в модуль сравнения с эталонной планограммой.
+
+\setcounter{subchaptercntr}{1}
+\setcounter{formulacntr}{1}
+\setcounter{imagecntr}{1}
