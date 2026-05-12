@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1778189107.39407 "main.xdv" "main.pdf" "main" 1778189124.99749 0
-  "main.xdv" 1778189106 639072 9aad4b274cb31eb5851498a23ba93048 "xelatex"
+["xdvipdfmx"] 1778622218.13969 "main.xdv" "main.pdf" "main" 1778622236.54891 0
+  "main.xdv" 1778622217 910304 d1a229d8184c5b68e8dee96a329bb3bc "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1778189104.05455 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1778189124.98772 0
+["xelatex"] 1778622214.78315 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1778622236.53928 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1775987982 27176716 ce547e2797dfb5e9fd79c4c13d7d3eab ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -141,11 +141,12 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1761901070 3468 f21ceb3448a22fec45299f924e7fc48b ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546510394 5871 8a29af4ad9d707b5280738995d050842 ""
-  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" 1778186311 239 45b7c8dd7da8757e86a490a0b2b832ac ""
+  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" 1778621642 274 4ff4520f3437cd62fde0a0809f44d5ef ""
   "chapters/Chapter1.tex" 1776807692 39817 a7b9921249d28e1158a2dc5f4a5cbc05 ""
   "chapters/Chapter2.tex" 1776811211 17696 3ee2dc85b75f740475b37115c9977836 ""
   "chapters/Chapter3.tex" 1776812021 30542 79d8de3ffddd12bddabd98b7da6aa7d0 ""
   "chapters/chapter4.tex" 1778189100 37431 4f0c746f2eb2acf6976e1b70409602f8 ""
+  "chapters/chapter5.tex" 1778622210 52605 8250c942e3683b00361e203a869d4557 ""
   "chapters/introduction.tex" 1776456957 6193 da757d7a6b346ef4a7cdd88e6863d00a ""
   "images/Neuron.png" 1775930576 29981 55d7e660fded28c8018f8c9b7662eb58 ""
   "images/app_dataflow_diagram.png" 1778184373 46027 2279cf0cc5114f59a505f4dd9b7e6a25 ""
@@ -157,7 +158,9 @@
   "images/dataset_annotation_example.png" 1775994556 4200835 5508f9e7fef9a92f757604b342a11f5e ""
   "images/dataset_class_distribution.png" 1776803187 197885 3921e87ae589254e788a9734af4d338a ""
   "images/dataset_raw_samples.png" 1776804300 260069 517a9320a08a2b97ba04c39c25f23dab ""
+  "images/deployment_tree.png" 1778619452 72031 957143c3b921aab1d4423b03e716621b ""
   "images/detection_result_example.png" 1778186264 1588242 9d84f98023bd7d084f582f8a2d1027e5 ""
+  "images/inference_speed_batch.png" 1778619684 337963 c2bbed3463224003c1c75d38c527e7a6 ""
   "images/merchandising_process_automated.png" 1776455252 1422275 c6e5098efd117e0d2d204edc22051833 ""
   "images/merchandising_process_current.png" 1776455100 719021 6b45ef72ace1d8daeea9fa05999e1bcf ""
   "images/nn_black_box.png" 1776807611 9393 fac8949a8b6653ffa670901d3963d345 ""
@@ -165,12 +168,14 @@
   "images/pr_curve.png" 1778185878 321420 bb105b8a3fc7f8d7ad394552797f350c ""
   "images/retail_vision_architecture.png" 1776329522 25213 f71700293af2ad1c8d784b902ec85702 ""
   "images/santa_impex_assortment.png" 1775990870 163477 1e8563c715639892daef75a43e4b9c57 ""
+  "images/sequence_diagram.png" 1778620723 74852 2b7292c5c40958e6ffeb4195caeab750 ""
   "images/shelf_class_imbalance_visual.png" 1776811542 354496 093d4beba9d3f1addb0c1b3fe6ab0d17 ""
   "images/training_curves.png" 1778184717 83445 180606b5978f76f358e0f638c131c6f8 ""
+  "images/webhook_flow.png" 1778620501 39346 e96f04edcf9be51b3045eba4c2ab1c0a ""
   "images/yolo_pipeline.png" 1776329246 15478 78b618cdac2676dccdcd451fab6c6523 ""
   "images/yolov8_architecture.png" 1775993671 442123 fbb4e986eafead5b957c6b0b2980d16a ""
-  "main.aux" 1778189124 6664 38fdef7f4c2b65ea343db4abe4e8582c "xelatex"
-  "main.tex" 1778186311 239 45b7c8dd7da8757e86a490a0b2b832ac ""
+  "main.aux" 1778622217 8028 72d878f43d7154f77267614d1e2ac6ea "xelatex"
+  "main.tex" 1778621642 274 4ff4520f3437cd62fde0a0809f44d5ef ""
   "preamble.tex" 1776807938 8119 696b39fce1a0c5a250f72088922f0fdc ""
   (generated)
   "main.aux"

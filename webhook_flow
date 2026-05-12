@@ -1,0 +1,50 @@
+// Схема обработки webhook-запроса
+digraph {
+	nodesep=0.5 rankdir=TB ranksep=0.7 splines=ortho
+	node [fontname=Arial fontsize=11 shape=box style="rounded,filled"]
+	edge [fontname=Arial fontsize=10]
+	user [label="Пользователь
+(мерчендайзер)" fillcolor=lightblue shape=ellipse]
+	telegram [label="Telegram Bot API" fillcolor=lightcyan shape=ellipse]
+	nginx [label="Nginx
+(порт 443)
+TLS termination" fillcolor=lightgreen]
+	uvicorn [label="Uvicorn
+(ASGI сервер)
+порт 8000" fillcolor=lightyellow]
+	bot [label="Бот (aiogram)
+загрузка фото
+по file_id" fillcolor="#FFE4B5"]
+	onnx [label="ONNX Runtime
+(YOLOv8n инференс)" fillcolor="#FFB6C1"]
+	user -> telegram [label="1. Отправка фото" fontcolor=blue]
+	telegram -> nginx [label="2. POST-запрос
+(webhook URL)" fontcolor=blue]
+	nginx -> uvicorn [label="3. Проксирование
+(расшифрованный запрос)" fontcolor=blue]
+	uvicorn -> bot [label="4. Передача
+в бота" fontcolor=blue]
+	bot -> onnx [label="5. Изображение →
+инференс" fontcolor=blue]
+	onnx -> bot [label="6. Результаты
+детекции" fontcolor=green style=dashed]
+	bot -> uvicorn [label="7. Аннотированное
+изображение + отчёт" fontcolor=green style=dashed]
+	uvicorn -> nginx [label="8. HTTP-ответ" fontcolor=green style=dashed]
+	nginx -> telegram [label="9. HTTPS-ответ" fontcolor=green style=dashed]
+	telegram -> user [label="10. Доставка ответа
+(фото + текст)" fontcolor=green style=dashed]
+	note1 [label="🔒 TLS-соединение
+устанавливается
+между клиентом и Nginx" fillcolor="#F0F0F0" fontsize=9 shape=note]
+	note2 [label="⚡ Webhook требует
+валидный SSL-сертификат
+(Let's Encrypt)" fillcolor="#F0F0F0" fontsize=9 shape=note]
+	{
+		rank=same
+		note1
+		note2
+	}
+	telegram -> note1 [style=invis]
+	nginx -> note2 [style=invis]
+}
