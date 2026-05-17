@@ -296,6 +296,14 @@ INPUT .\images\shelf_class_imbalance_visual.png
 INPUT .\images\dataset_class_distribution.png
 INPUT .\images\dataset_class_distribution.png
 INPUT .\images\dataset_class_distribution.png
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam7.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
+INPUT C:\Users\User\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT .\images\augmentation_mosaic_example.png
 INPUT .\images\augmentation_mosaic_example.png
 INPUT .\images\augmentation_mosaic_example.png
@@ -338,7 +346,4 @@ INPUT .\images\inference_speed_batch.png
 INPUT .\images\webhook_flow.png
 INPUT .\images\webhook_flow.png
 INPUT .\images\webhook_flow.png
-INPUT .\images\sequence_diagram.png
-INPUT .\images\sequence_diagram.png
-INPUT .\images\sequence_diagram.png
 INPUT main.aux

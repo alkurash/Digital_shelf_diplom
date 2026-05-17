@@ -1,16 +1,18 @@
 # Fdb version 4
-["xdvipdfmx"] 1778622218.13969 "main.xdv" "main.pdf" "main" 1778622236.54891 0
-  "main.xdv" 1778622217 910304 d1a229d8184c5b68e8dee96a329bb3bc "xelatex"
+["xdvipdfmx"] 1779054890.50399 "main.xdv" "main.pdf" "main" 1779054908.76713 0
+  "main.xdv" 1779054889 939816 3b7311bf19fc3d428c2d5c684bc37e40 "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1778622214.78315 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1778622236.53928 0
+["xelatex"] 1779054887.13155 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1779054908.75799 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1775987982 27176716 ce547e2797dfb5e9fd79c4c13d7d3eab ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
+  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1233951854 928 2dc8d444221b7a635bb58038579b861a ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1233951854 908 2921f8a10601f252058503cc6570e581 ""
+  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1233951854 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1233951854 940 228d6584342e91276bf566bcf9716b83 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -144,9 +146,9 @@
   "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" 1778621642 274 4ff4520f3437cd62fde0a0809f44d5ef ""
   "chapters/Chapter1.tex" 1776807692 39817 a7b9921249d28e1158a2dc5f4a5cbc05 ""
   "chapters/Chapter2.tex" 1776811211 17696 3ee2dc85b75f740475b37115c9977836 ""
-  "chapters/Chapter3.tex" 1776812021 30542 79d8de3ffddd12bddabd98b7da6aa7d0 ""
-  "chapters/chapter4.tex" 1778189100 37431 4f0c746f2eb2acf6976e1b70409602f8 ""
-  "chapters/chapter5.tex" 1778622210 52605 8250c942e3683b00361e203a869d4557 ""
+  "chapters/Chapter3.tex" 1779054611 30828 7cd8a14fe2c56fb09a7b85cd2988bc0a ""
+  "chapters/chapter4.tex" 1779054463 37378 5edb55525ce966094b9f4848e5a61a52 ""
+  "chapters/chapter5.tex" 1779054886 58037 24593f96ad64b7b13ee18be2dd0cf745 ""
   "chapters/introduction.tex" 1776456957 6193 da757d7a6b346ef4a7cdd88e6863d00a ""
   "images/Neuron.png" 1775930576 29981 55d7e660fded28c8018f8c9b7662eb58 ""
   "images/app_dataflow_diagram.png" 1778184373 46027 2279cf0cc5114f59a505f4dd9b7e6a25 ""
@@ -168,13 +170,12 @@
   "images/pr_curve.png" 1778185878 321420 bb105b8a3fc7f8d7ad394552797f350c ""
   "images/retail_vision_architecture.png" 1776329522 25213 f71700293af2ad1c8d784b902ec85702 ""
   "images/santa_impex_assortment.png" 1775990870 163477 1e8563c715639892daef75a43e4b9c57 ""
-  "images/sequence_diagram.png" 1778620723 74852 2b7292c5c40958e6ffeb4195caeab750 ""
   "images/shelf_class_imbalance_visual.png" 1776811542 354496 093d4beba9d3f1addb0c1b3fe6ab0d17 ""
   "images/training_curves.png" 1778184717 83445 180606b5978f76f358e0f638c131c6f8 ""
   "images/webhook_flow.png" 1778620501 39346 e96f04edcf9be51b3045eba4c2ab1c0a ""
   "images/yolo_pipeline.png" 1776329246 15478 78b618cdac2676dccdcd451fab6c6523 ""
   "images/yolov8_architecture.png" 1775993671 442123 fbb4e986eafead5b957c6b0b2980d16a ""
-  "main.aux" 1778622217 8028 72d878f43d7154f77267614d1e2ac6ea "xelatex"
+  "main.aux" 1779054889 7750 2887b357217887c0a890332e47ac6fbd "xelatex"
   "main.tex" 1778621642 274 4ff4520f3437cd62fde0a0809f44d5ef ""
   "preamble.tex" 1776807938 8119 696b39fce1a0c5a250f72088922f0fdc ""
   (generated)

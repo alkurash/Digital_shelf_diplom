@@ -169,13 +169,20 @@
   Для минимизации подобных рисков в работе применяется комплексный подход, включающий не только стратификацию выборки, но и использование 
   специализированных функций потерь, таких как Focal Loss, которые позволяют динамически перевзвешивать вклад каждого примера в процесс 
   обучения.
-    \begin{figure}[H]
-      \centering
-      \includegraphics[angle=90, height=230mm, width=210mm, keepaspectratio]{images/dataset_class_distribution.png}
-      \caption*{\gostFont Рисунок \thechaptercntr.\theimagecntr\spc {--} Распределение количества объектов по классам в датасете.}
-      \label{fig:class_dist}
-    \end{figure}
-    \addtocounter{imagecntr}{1}
+   \begin{figure}[H]
+  \centering
+  \rotatebox{90}{%
+    % Задаем ширину минипейджа равной высоте текстового поля страницы
+    \begin{minipage}{0.9\textheight} 
+      \centering
+      \includegraphics[width=\textwidth, keepaspectratio]{images/dataset_class_distribution.png}
+      \vspace{2mm} % Небольшой отступ между картинкой и подписью
+      \caption*{\gostFont Рисунок \thechaptercntr.\theimagecntr\spc {--} Распределение количества объектов по классам в датасете.}
+      \label{fig:class_dist}
+    \end{minipage}%
+  }
+\end{figure}
+\addtocounter{imagecntr}{1}
   \par
 }
 
