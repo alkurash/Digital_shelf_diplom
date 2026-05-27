@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.4.12)  18 MAY 2026 00:54
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.2) (preloaded format=xelatex 2026.4.12)  27 MAY 2026 23:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1040,7 +1040,133 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 3.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 3.
-(chapters/introduction.tex
+(chapters/title.tex
+Underfull \hbox (badness 2698) in paragraph at lines 5--6
+ []\TU/Arial(2)/m/n/16 Министерство образования Республики Беларусь  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+ []\TU/Arial(2)/m/n/16 Учреждение образования  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+ []\TU/Arial(2)/m/n/16 Кафедра «ИИТ»  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 19.
+(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
+ (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+[]|\TU/Arial(2)/m/n/12 «К защите допускаю»
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+ []\TU/Arial(2)/b/n/16 ПАСТЕРИЗАЦИОННОЙ УСТАНОВКИ 
+ []
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 54--55
+ []\TU/Arial(2)/m/n/12 ПОЯСНИТЕЛЬНАЯ ЗАПИСКА К ДИПЛОМНОМУ ПРОЕКТУ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+ []\TU/Arial(2)/b/n/16 БрГТУ200043-05 81 00 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
+ []\TU/Arial(2)/m/n/16 Листов 63 
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 83.
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 83--86
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 89--92
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 95--99
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 102--106
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 109--112
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 115--118
+[][]  
+ []
+
+
+Overfull \hbox (21.77344pt too wide) in paragraph at lines 121--124
+[][]  
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+ []\TU/Arial(2)/m/n/14 2024 г. 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[5
+
+]) (chapters/summary.tex) (chapters/introduction.tex
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[6]
 Overfull \hbox (2.82973pt too wide) in paragraph at lines 23--34
 [] \TU/TimesNewRoman(2)/m/n/13 Актуальность настоящей работы обусловлена необходимостью автоматизации кон-
  []
@@ -1068,8 +1194,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[5
-
+[7
 
 
 ]
@@ -1095,7 +1220,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[6
+[8
 
 
 ]
@@ -1119,7 +1244,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[7]
+[9]
 LaTeX Font Info:    Calculating math sizes for size <13> on input line 81.
 
 
@@ -1138,14 +1263,6 @@ LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <13> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <6.5> not available
 (Font)              size <6> substituted on input line 81.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
-(C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
- (C:\Users\User\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13> not available
 (Font)              size <12> substituted on input line 81.
@@ -1197,7 +1314,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[8]
+[10]
 File: images/merchandising_process_current.png Graphic file (type bmp)
 <images/merchandising_process_current.png>
 
@@ -1228,7 +1345,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[9]
+[11]
 File: images/merchandising_process_automated.png Graphic file (type bmp)
 <images/merchandising_process_automated.png>
 
@@ -1249,7 +1366,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[10]
+[12]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 242--242
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1289,7 +1406,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[11]
+[13]
 File: images/nn_white_box.png Graphic file (type bmp)
 <images/nn_white_box.png>
 
@@ -1332,7 +1449,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[12]
+[14]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 350--350
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1392,7 +1509,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[13]
+[15]
 File: images/retail_vision_architecture.png Graphic file (type bmp)
 <images/retail_vision_architecture.png>
 
@@ -1413,7 +1530,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[14]) (chapters/Chapter2.tex
+[16]) (chapters/Chapter2.tex
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
 [] 
  []
@@ -1431,7 +1548,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[15]
+[17]
 Underfull \hbox (badness 5189) in paragraph at lines 41--43
  []\TU/TimesNewRoman(0)/m/n/13 Таблица 2.1 – Сравнительный анализ существующих решений 
  []
@@ -1456,7 +1573,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[16
+[18
 
 
 ]
@@ -1497,7 +1614,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[17]
+[19]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 161--161
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1532,7 +1649,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[18]
+[20]
 File: images/audit_report_bot.png Graphic file (type bmp)
 <images/audit_report_bot.png>
 
@@ -1553,7 +1670,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[19]) (chapters/Chapter3.tex
+[21]) (chapters/Chapter3.tex
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
 [] 
  []
@@ -1571,7 +1688,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[20]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
  []\TU/TimesNewRoman(0)/m/n/13 Таблица 3.1 – Классы датасета продукции Санта Импэкс. 
  []
@@ -1594,7 +1711,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[21
+[23
 
 ]
 File: images/dataset_raw_samples.png Graphic file (type bmp)
@@ -1617,7 +1734,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[22]
+[24]
 Underfull \hbox (badness 10000) in paragraph at lines 102--103
  []\TU/CourierNew(0)/m/n/13 <class_id> <x_c> <y_c> <w> <h> 
  []
@@ -1650,7 +1767,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[23]
+[25]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 120--120
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1690,7 +1807,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[24]
+[26]
 File: images/shelf_class_imbalance_visual.png Graphic file (type bmp)
 <images/shelf_class_imbalance_visual.png>
 File: images/dataset_class_distribution.png Graphic file (type bmp)
@@ -1713,7 +1830,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[25]
+[27]
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
 [] 
  []
@@ -1731,7 +1848,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[26]
+[28]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 212--212
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1769,7 +1886,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[27]
+[29]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 249--249
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1809,7 +1926,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[28]
+[30]
 File: images/yolov8_architecture.png Graphic file (type bmp)
 <images/yolov8_architecture.png>
 
@@ -1830,7 +1947,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[29
+[31
 
 ]
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
@@ -1850,7 +1967,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[30]
+[32]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 93--93
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1898,7 +2015,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[31]
+[33]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 134--134
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -1928,7 +2045,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[32]
+[34]
 Overfull \hbox (5.30162pt too wide) in paragraph at lines 198--199
 \TU/TimesNewRoman(0)/m/n/13 непосредственно в торговых точках. Приложение реализовано на фреймворке \TU/TimesNewRoman(2)/b/n/13 React Native\TU/TimesNewRoman(0)/m/n/13 ,
  []
@@ -1958,7 +2075,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[33]
+[35]
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
 [] 
  []
@@ -1976,7 +2093,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[34]
+[36]
 File: images/app_detection_screen.png Graphic file (type bmp)
 <images/app_detection_screen.png>
 
@@ -2002,7 +2119,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[35]
+[37]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 253--253
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -2055,7 +2172,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[36]
+[38]
 File: images/confusion_matrix.png Graphic file (type bmp)
 <images/confusion_matrix.png>
 File: images/pr_curve.png Graphic file (type bmp)
@@ -2078,7 +2195,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[37]
+[39]
 File: images/detection_result_example.png Graphic file (type bmp)
 <images/detection_result_example.png>
 
@@ -2104,7 +2221,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[38]
+[40]
 File: images/bot_architecture.png Graphic file (type bmp)
 <images/bot_architecture.png>
 
@@ -2125,7 +2242,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[39
+[41
 
 
 ]
@@ -2149,7 +2266,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[40]
+[42]
 Overfull \hbox (2.36212pt too wide) in paragraph at lines 82--83
 [] \TU/TimesNewRoman(0)/m/n/13 Конвертация выполняется стандартными средствами библиотеки Ultralytics по сле-
  []
@@ -2187,7 +2304,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[41]
+[43]
 File: images/inference_speed_batch.png Graphic file (type bmp)
 <images/inference_speed_batch.png>
 
@@ -2213,7 +2330,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[42]
+[44]
 Overfull \hbox (7.22073pt too wide) in paragraph at lines 159--159
 \TU/TimesNewRoman(0)/m/n/13 принимающим соединения на порту 443. Nginx выступает в роли обратного прокси-сервера,
  []
@@ -2241,7 +2358,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[43]
+[45]
 File: images/webhook_flow.png Graphic file (type bmp)
 <images/webhook_flow.png>
 
@@ -2262,7 +2379,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[44]
+[46]
 Overfull \hbox (8.53294pt too wide) in paragraph at lines 211--211
 []|\TU/TimesNewRoman(0)/m/n/13 где| 
  []
@@ -2290,7 +2407,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[45]
+[47]
 Overfull \hbox (11.2427pt too wide) in paragraph at lines 252--254
 []\TU/CourierNew(0)/m/n/13 bot \TU/TimesNewRoman(0)/m/n/13 – основной контейнер приложения aiogram с подключённым ONNX Runtime.
  []
@@ -2338,7 +2455,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[46]
+[48]
 Overfull \hbox (4.25604pt too wide) in paragraph at lines 299--301
 []\TU/TimesNewRoman(0)/m/n/13 Верификация регистрации webhook через Telegram Bot API \TU/CourierNew(0)/m/n/13 getWebhookInfo\TU/TimesNewRoman(0)/m/n/13 .
  []
@@ -2371,7 +2488,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[47]
+[49]
 Underfull \hbox (badness 3503) in paragraph at lines 354--365
  [][] 
  []
@@ -2399,7 +2516,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[48]
+[50]
 Overfull \hbox (31.29527pt too wide) has occurred while \output is active
 [] 
  []
@@ -2417,7 +2534,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[49]
+[51]
 Overfull \hbox (2.21654pt too wide) in paragraph at lines 441--442
 \TU/TimesNewRoman(0)/m/n/13 кой подход позволяет оперативно реагировать на аномалии и проводить пост-инцидентный
  []
@@ -2440,9 +2557,331 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[50]
+[52]
 Overfull \hbox (13.39435pt too wide) in paragraph at lines 478--478
 [] \TU/TimesNewRoman(0)/m/n/13 Интеграция вебхук-эндпоинтов с обратным прокси-сервером Nginx и ASGI-сервером
+ []
+
+) (chapters/chapter6.tex
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[53]
+Overfull \hbox (1.25552pt too wide) in paragraph at lines 64--65
+[] \TU/TimesNewRoman(0)/m/n/13 В том случае, когда на стадии технико-экономического обоснования проекта невоз-
+ []
+
+
+Underfull \hbox (badness 2165) in paragraph at lines 82--83
+ []\TU/TimesNewRoman(0)/m/n/13 Таблица 6.1 – Перечень и объем функций программного обеспечения 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (500.07794pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[54
+
+
+]
+Overfull \hbox (0.62054pt too wide) in paragraph at lines 139--140
+[] \TU/TimesNewRoman(0)/m/n/13 • Продолжительности времени разработки ($[][]$), которое устанавливается эксперт-
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[55]
+Overfull \hbox (1.5pt too wide) in paragraph at lines 140--141
+[] \TU/TimesNewRoman(0)/m/n/13 • Количества разработчиков программного обеспечения. В данном дипломном про-
+ []
+
+
+Overfull \hbox (8.53294pt too wide) in paragraph at lines 150--150
+[]|\TU/TimesNewRoman(0)/m/n/13 где| 
+ []
+
+
+Overfull \hbox (6.12476pt too wide) in paragraph at lines 149--156
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
+ []\TU/TimesNewRoman(0)/m/n/13 Таблица 6.2 – Расчет заработной платы 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[56]
+Overfull \hbox (4.82182pt too wide) in paragraph at lines 228--229
+[] \TU/TimesNewRoman(0)/m/n/13 В данном дипломном проекте для разработки нейронной сети приобретение какого-
+ []
+
+
+Overfull \hbox (8.53294pt too wide) in paragraph at lines 238--238
+[]|\TU/TimesNewRoman(0)/m/n/13 где| 
+ []
+
+
+Overfull \hbox (6.12476pt too wide) in paragraph at lines 237--242
+[][] 
+ []
+
+
+Overfull \hbox (37.49066pt too wide) in paragraph at lines 251--252
+[] \TU/TimesNewRoman(0)/m/n/13 Прочие затраты $[][]$ включают затраты на приобретение специальной научно-технической
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[57]
+Overfull \hbox (8.53294pt too wide) in paragraph at lines 289--289
+[]|\TU/TimesNewRoman(0)/m/n/13 где| 
+ []
+
+
+Overfull \hbox (6.12476pt too wide) in paragraph at lines 288--292
+[][] 
+ []
+
+
+Overfull \hbox (8.53294pt too wide) in paragraph at lines 307--307
+[]|\TU/TimesNewRoman(0)/m/n/13 где| 
+ []
+
+
+Overfull \hbox (6.12476pt too wide) in paragraph at lines 306--309
+[][] 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
+ []\TU/TimesNewRoman(0)/m/n/13 Таблица 6.3 – Себестоимость программного продукта 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[59]
+Underfull \hbox (badness 1783) in paragraph at lines 452--462
+ [][] 
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[60]) (chapters/conclusion.tex
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[61]
+Overfull \hbox (5.72556pt too wide) in paragraph at lines 50--52
+[]\TU/TimesNewRoman(0)/m/n/13 Сравнение фактической выкладки с эталонной планограммой и выявление несо-
+ []
+
+) (chapters/references.tex
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[62
+
+
+]
+Overfull \hbox (92.88873pt too wide) in paragraph at lines 30--32
+\TU/TimesNewRoman(0)/m/n/13 зрения [Электронный ресурс] / Roboflow Inc. – 2024. – Режим доступа: https://docs.roboflow.com/.
+ []
+
+
+Overfull \hbox (48.96083pt too wide) in paragraph at lines 33--35
+\TU/TimesNewRoman(0)/m/n/13 ный ресурс] / Microsoft Corporation. – 2024. – Режим доступа: https://onnxruntime.ai/docs/.
+ []
+
+
+Overfull \hbox (4.93948pt too wide) in paragraph at lines 36--38
+[]\TU/TimesNewRoman(0)/m/n/13 Telegram Bot API – официальная документация [Электронный ресурс] / Telegram
+ []
+
+
+Overfull \hbox (31.29527pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Overfull \vbox (815.87848pt too high) has occurred while \output is active []
+
+
+Overfull \hbox (498.41129pt too wide) has occurred while \output is active
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+[] 
+ []
+
+[63
+
+
+]
+Overfull \hbox (60.31117pt too wide) in paragraph at lines 60--62
+[]\TU/TimesNewRoman(0)/m/n/13 YOLO: история и сравнение версий архитектуры [Электронный ресурс] / информационно-
+ []
+
+
+Overfull \hbox (135.34505pt too wide) in paragraph at lines 60--62
+\TU/TimesNewRoman(0)/m/n/13 образовательное сообщество Хабр. – Москва, 2023. – Режим доступа: https://habr.com/ru/articles/732076/.
  []
 
 )
@@ -2463,7 +2902,7 @@ Underfull \hbox (badness 10000) has occurred while \output is active
 [] 
  []
 
-[51] 
+[64] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux)
  ***********
@@ -2481,12 +2920,12 @@ LaTeX Font Warning: Size substitutions with differences
 ### simple group (level 1) entered at line 137 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22735 strings out of 402982
- 536526 string characters out of 5448668
- 1001625 words of memory out of 5000000
- 51025 multiletter control sequences out of 15000+600000
- 634635 words of font info for 137 fonts, out of 8000000 for 9000
+ 22833 strings out of 402982
+ 538926 string characters out of 5448668
+ 1003627 words of memory out of 5000000
+ 51091 multiletter control sequences out of 15000+600000
+ 639745 words of font info for 172 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  118i,17n,121p,4065b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.xdv (47 pages, 939816 bytes).
+Output written on main.xdv (60 pages, 1213488 bytes).
