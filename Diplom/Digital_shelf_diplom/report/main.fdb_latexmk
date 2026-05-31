@@ -1,13 +1,12 @@
 # Fdb version 4
-["xdvipdfmx"] 1779914786.089 "main.xdv" "main.pdf" "main" 1779914786.08488 0
-  "main.xdv" 1779914785 1213488 e879e14ff5993115d18f72181428f04a "xelatex"
+["xdvipdfmx"] 1780260983.99093 "main.xdv" "main.pdf" "main" 1780261002.41348 0
+  "main.xdv" 1780260983 1208496 7e789c1a90f191d0b1c36ed1d09792de "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1779914804.70723 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1779914805.56568 2
+["xelatex"] 1780260979.01788 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1780261002.40337 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1775987982 27176716 ce547e2797dfb5e9fd79c4c13d7d3eab ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
-  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1233951854 916 f87d7c45f9c908e672703b83b72241a3 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1233951854 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -18,15 +17,12 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi12.tfm" 1136765053 1524 4414a8315f39513458b80dfc63bff03a ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi6.tfm" 1136765053 1512 f21f83efb36853c0b70002322c1ab3ad ""
-  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi8.tfm" 1136765053 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmmi9.tfm" 1136765053 1524 d89e2d087a9828407a196f428428ef4a ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr6.tfm" 1136765053 1300 b62933e007d01cfd073f79b963c01526 ""
-  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr8.tfm" 1136765053 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr9.tfm" 1136765053 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy6.tfm" 1136765053 1116 933a60c408fc0a863a92debe84b2d294 ""
-  "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy8.tfm" 1136765053 1120 8b7d695260f3cff42e636090a8002094 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy9.tfm" 1136765053 1116 25a7bf822c58caf309a702ef79f4afbb ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty" 1734114575 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1734114575 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -152,13 +148,12 @@
   "chapters/Chapter2.tex" 1776811211 17696 3ee2dc85b75f740475b37115c9977836 ""
   "chapters/Chapter3.tex" 1779054611 30828 7cd8a14fe2c56fb09a7b85cd2988bc0a ""
   "chapters/chapter4.tex" 1779054463 37378 5edb55525ce966094b9f4848e5a61a52 ""
-  "chapters/chapter5.tex" 1779054886 58037 24593f96ad64b7b13ee18be2dd0cf745 ""
-  "chapters/chapter6.tex" 1779913042 37887 675553f4b72494dddecd4e46e654d0a7 ""
+  "chapters/chapter5.tex" 1780258366 58026 d2bad51065e56f53faa1a39186df39b7 ""
+  "chapters/chapter6.tex" 1780257144 37950 1ceb3d7661b6bad0c11f6359158009aa ""
   "chapters/conclusion.tex" 1779913515 5909 a794b6442d23b0a3bed6207d7cfab2ea ""
   "chapters/introduction.tex" 1776456957 6193 da757d7a6b346ef4a7cdd88e6863d00a ""
-  "chapters/references.tex" 1779913778 6405 fe3b794f9638e9915c38c8466789124f ""
-  "chapters/summary.tex" 1779913964 3384 1ec4e0d8dcc6f07e326b98f447b0b9fc ""
-  "chapters/title.tex" 1779914780 3437 dc7a3497da96b1c4796df42b5d935ebc ""
+  "chapters/references.tex" 1780260735 5335 5f9005dd42b95ca43688c51756d27a90 ""
+  "chapters/summary.tex" 1780260978 4369 46170d87a2744e529491736195f50536 ""
   "images/Neuron.png" 1775930576 29981 55d7e660fded28c8018f8c9b7662eb58 ""
   "images/app_dataflow_diagram.png" 1778184373 46027 2279cf0cc5114f59a505f4dd9b7e6a25 ""
   "images/app_detection_screen.png" 1778185124 1775994 e17d5443e009cac0ae1afe5023d47ab6 ""
@@ -184,7 +179,7 @@
   "images/webhook_flow.png" 1778620501 39346 e96f04edcf9be51b3045eba4c2ab1c0a ""
   "images/yolo_pipeline.png" 1776329246 15478 78b618cdac2676dccdcd451fab6c6523 ""
   "images/yolov8_architecture.png" 1775993671 442123 fbb4e986eafead5b957c6b0b2980d16a ""
-  "main.aux" 1779914785 7752 83d27ecddf468371259ff0c4ca0455ad "xelatex"
+  "main.aux" 1780260983 7752 45787d29f8d8222682053f08e16e6e1f "xelatex"
   "main.tex" 1779914789 417 bceea02e20820ff196545d57892e216b ""
   "preamble.tex" 1779913716 7731 5cf74da029bca407d090b8a2d9f9d264 ""
   (generated)
