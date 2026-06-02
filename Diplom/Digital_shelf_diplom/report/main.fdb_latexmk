@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1780260983.99093 "main.xdv" "main.pdf" "main" 1780261002.41348 0
-  "main.xdv" 1780260983 1208496 7e789c1a90f191d0b1c36ed1d09792de "xelatex"
+["xdvipdfmx"] 1780433276.09322 "main.xdv" "main.pdf" "main" 1780433294.66583 0
+  "main.xdv" 1780433275 1216476 adbf048a570fa22e014909384424c77e "xelatex"
   (generated)
   "main.pdf"
   (rewritten before read)
-["xelatex"] 1780260979.01788 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1780261002.40337 0
+["xelatex"] 1780433271.42785 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" "main.xdv" "main" 1780433294.65573 0
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1775987982 27176716 ce547e2797dfb5e9fd79c4c13d7d3eab ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1234365220 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -143,15 +143,16 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1761901070 3468 f21ceb3448a22fec45299f924e7fc48b ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546510394 5871 8a29af4ad9d707b5280738995d050842 ""
-  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" 1779914789 417 bceea02e20820ff196545d57892e216b ""
-  "chapters/Chapter1.tex" 1776807692 39817 a7b9921249d28e1158a2dc5f4a5cbc05 ""
-  "chapters/Chapter2.tex" 1776811211 17696 3ee2dc85b75f740475b37115c9977836 ""
-  "chapters/Chapter3.tex" 1779054611 30828 7cd8a14fe2c56fb09a7b85cd2988bc0a ""
+  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/main.tex" 1780431636 457 69338d8c039328011635909999277528 ""
+  "chapters/Chapter1.tex" 1780433093 39813 2d24be70b5ecdd6e853b16c7822472a1 ""
+  "chapters/Chapter2.tex" 1780350387 17697 70586fb0982efed6f58c8424cabe3f38 ""
+  "chapters/Chapter3.tex" 1780351513 30642 7f66f02bdaa008a8c9293b3077a06f67 ""
+  "chapters/abbreviations.tex" 1780433270 1488 1d0d47510b8ded3ee55a0436c02bdb95 ""
   "chapters/chapter4.tex" 1779054463 37378 5edb55525ce966094b9f4848e5a61a52 ""
   "chapters/chapter5.tex" 1780258366 58026 d2bad51065e56f53faa1a39186df39b7 ""
-  "chapters/chapter6.tex" 1780257144 37950 1ceb3d7661b6bad0c11f6359158009aa ""
+  "chapters/chapter6.tex" 1780430925 38231 7ebca6e6b0d01d9527c9920e8e160db9 ""
   "chapters/conclusion.tex" 1779913515 5909 a794b6442d23b0a3bed6207d7cfab2ea ""
-  "chapters/introduction.tex" 1776456957 6193 da757d7a6b346ef4a7cdd88e6863d00a ""
+  "chapters/introduction.tex" 1780350793 6195 6dabb5de2a9b6ba3d6f00825ed36e2e5 ""
   "chapters/references.tex" 1780260735 5335 5f9005dd42b95ca43688c51756d27a90 ""
   "chapters/summary.tex" 1780260978 4369 46170d87a2744e529491736195f50536 ""
   "images/Neuron.png" 1775930576 29981 55d7e660fded28c8018f8c9b7662eb58 ""
@@ -179,9 +180,9 @@
   "images/webhook_flow.png" 1778620501 39346 e96f04edcf9be51b3045eba4c2ab1c0a ""
   "images/yolo_pipeline.png" 1776329246 15478 78b618cdac2676dccdcd451fab6c6523 ""
   "images/yolov8_architecture.png" 1775993671 442123 fbb4e986eafead5b957c6b0b2980d16a ""
-  "main.aux" 1780260983 7752 45787d29f8d8222682053f08e16e6e1f "xelatex"
-  "main.tex" 1779914789 417 bceea02e20820ff196545d57892e216b ""
-  "preamble.tex" 1779913716 7731 5cf74da029bca407d090b8a2d9f9d264 ""
+  "main.aux" 1780433275 7752 9a0b83e53c76bcf5bc37c2d6a235da05 "xelatex"
+  "main.tex" 1780431636 457 69338d8c039328011635909999277528 ""
+  "preamble.tex" 1780351069 7731 5cf74da029bca407d090b8a2d9f9d264 ""
   (generated)
   "main.aux"
   "main.log"

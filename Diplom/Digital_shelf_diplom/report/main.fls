@@ -355,6 +355,9 @@ INPUT chapters\chapter6.tex
 INPUT .\chapters\conclusion.tex
 INPUT .\chapters\conclusion.tex
 INPUT chapters\conclusion.tex
+INPUT .\chapters\abbreviations.tex
+INPUT .\chapters\abbreviations.tex
+INPUT chapters\abbreviations.tex
 INPUT .\chapters\references.tex
 INPUT .\chapters\references.tex
 INPUT chapters\references.tex
