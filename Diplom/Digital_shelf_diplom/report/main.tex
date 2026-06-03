@@ -1,17 +1,161 @@
+% Основной файл: diploma.tex
+% Компиляция: xelatex diploma.tex
+
 \input{preamble.tex}
 
 \begin{document}
 
-    \input{chapters/summary.tex}
-    \input{chapters/introduction.tex}
-    \input{chapters/Chapter1.tex}
-    \input{chapters/Chapter2.tex}
-    \input{chapters/Chapter3.tex}
-    \input{chapters/chapter4.tex}
-    \input{chapters/chapter5.tex}
-    \input{chapters/chapter6.tex}
-    \input{chapters/conclusion.tex}
-    \input{chapters/abbreviations.tex}
-    \input{chapters/references.tex}
+% ========== ТИТУЛЬНЫЙ ЛИСТ (без полей/штампа) ==========
+\begin{titlepage}
+\thispagestyle{empty}  % Отключает номер страницы и штамп
+\pagestyle{empty}      % Отключает колонтитулы для всей страницы
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{16pt}{0pt}\selectfont 
+  Министерство образования Республики Беларусь \vspace{20pt}
+
+  Учреждение образования \vspace{8pt}
+
+  <<Брестский государственный технический университет>> \vspace{20pt}
+
+  Кафедра <<ИИТ>> \vspace{21pt}
+\end{center}
+
+\begin{flushleft}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{12pt}{18pt}\selectfont 
+
+  \begin{tabular}{p{8.35cm} p{5cm}}
+    & <<К защите допускаю>> Заведующий кафедрой 
+  \end{tabular}
+  
+  \vspace{14pt}
+  
+  \begin{tabular}{p{8.35cm} p{8cm}}
+    & \line(1, 0){3.5cm} \hspace{0.1cm} В. А. Головко \\
+    & "\line(1, 0){1.0cm}" \line(1, 0){2.25cm} \hspace{0.1cm} 2026 г. \\
+  \end{tabular}
+  
+\end{flushleft}
+
+\vspace{24pt}
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\bfseries
+\fontsize{16pt}{24pt}\selectfont 
+  \par РАЗРАБОТКА МОДУЛЯ ПРОГНОЗИРОВАНИЯ ДАННЫХ 
+
+  \par ВРЕМЕННЫХ РЯДОВ ТЕХНОЛОГИЧЕСКОГО ПРОЦЕССА 
+
+  \par ПАСТЕРИЗАЦИОННОЙ УСТАНОВКИ 
+
+  \par
+\end{center}
+
+\vspace{24pt}
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{12pt}{0pt}\selectfont 
+    ПОЯСНИТЕЛЬНАЯ ЗАПИСКА К ДИПЛОМНОМУ ПРОЕКТУ
+\end{center}
+
+\vspace{32pt}
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\bfseries
+\fontsize{16pt}{0pt}\selectfont 
+    БрГТУ200043-05 81 00
+\end{center}
+
+\vspace{22pt}
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{16pt}{0pt}\selectfont 
+    Листов 61
+\end{center}
+
+\vspace{22pt}
+
+\begin{flushleft}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{14pt}{0pt}\selectfont 
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Заведующий кафедрой & & В. А. Головко  
+  \end{tabular}
+
+  \vspace{14pt}
+  
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Руководитель & & Д. С. Иванюк \\ 
+  \end{tabular}
+
+  \vspace{14pt}
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Консультант & & Д. С. Иванюк \\
+    \raggedleft по основным вопросам & &
+  \end{tabular}
+
+  \vspace{14pt}
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Консультант & & Проровский А.Г. \\
+    \raggedleft по экономическому разделу & &
+  \end{tabular}
+
+  \vspace{14pt}
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Выполнил & & Кураш А.Ю. \\
+  \end{tabular}
+
+  \vspace{14pt}
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Нормоконтроль & & Кулик А.Д. \\
+  \end{tabular}
+
+  \vspace{14pt}
+
+  \begin{tabular}{p{6.5cm} p{4.767cm} p{5.633cm}}
+    \raggedleft Рецензент & & \\
+  \end{tabular}
+  
+\end{flushleft}
+
+\begin{center}
+\cyrillicfontsf 
+\englishfontsf
+\fontsize{14pt}{21pt}\selectfont
+    2026 г.
+\end{center}
+
+\end{titlepage}
+
+% ========== ОСНОВНОЕ СОДЕРЖАНИЕ (здесь уже будут поля из preamble) ==========
+\input{chapters/summary.tex}
+\input{chapters/introduction.tex}
+\input{chapters/Chapter1.tex}
+\input{chapters/Chapter2.tex}
+\input{chapters/Chapter3.tex}
+\input{chapters/chapter4.tex}
+\input{chapters/chapter5.tex}
+\input{chapters/chapter6.tex}
+\input{chapters/conclusion.tex}
+\input{chapters/abbreviations.tex}
+\input{chapters/references.tex}
 
 \end{document}

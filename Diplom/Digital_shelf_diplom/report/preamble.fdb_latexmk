@@ -4,7 +4,7 @@
   (generated)
   "preamble.pdf"
   (rewritten before read)
-["xelatex"] 1780351072.4914 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/preamble.tex" "preamble.xdv" "preamble" 1780351074.61854 2
+["xelatex"] 1780489489.46041 "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/preamble.tex" "preamble.xdv" "preamble" 1780489492.21691 2
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1775987982 27176716 ce547e2797dfb5e9fd79c4c13d7d3eab ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/ifluatex.sty" 1734114575 492 1994775aa15b0d1289725a0b1bbc2d4c ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1734114575 7984 7dbb9280f03c0a315425f1b4f35d43ee ""
@@ -123,9 +123,9 @@
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/tools/enumerate.sty" 1761901070 3468 f21ceb3448a22fec45299f924e7fc48b ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/User/AppData/Local/Programs/MiKTeX/tex/latex/xltxtra/xltxtra.sty" 1546510394 5871 8a29af4ad9d707b5280738995d050842 ""
-  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/preamble.tex" 1780351069 7731 5cf74da029bca407d090b8a2d9f9d264 ""
-  "preamble.aux" 1780351064 32 3985256e7290058c681f74d7a3565a19 "xelatex"
-  "preamble.tex" 1780351069 7731 5cf74da029bca407d090b8a2d9f9d264 ""
+  "c:/Users/User/OneDrive/Desktop/Digital_shelf_diplom/Diplom/Digital_shelf_diplom/report/preamble.tex" 1780489484 7928 54394064a76616dcdf937f0cfe22c110 ""
+  "preamble.aux" 0 -1 0 "xelatex"
+  "preamble.tex" 1780489484 7928 54394064a76616dcdf937f0cfe22c110 ""
   (generated)
   "preamble.aux"
   "preamble.log"
