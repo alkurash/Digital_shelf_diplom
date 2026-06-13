@@ -1,0 +1,69 @@
+\xpg@aux {babelshorthands = true}{russian}
+\contentsline {section}{ВВЕДЕНИЕ}{5}{}%
+\contentsline {section}{\numberline {0.1}СИСТЕМНЫЙ АНАЛИЗ И ПОСТАНОВКА ЗАДАЧИ}{6}{}%
+\contentsline {section}{1. СИСТЕМНЫЙ АНАЛИЗ И ПОСТАНОВКА ЗАДАЧИ}{6}{}%
+\contentsline {subsection}{\numberline {0.1.1}Основные понятия предметной области}{6}{}%
+\contentsline {subsection}{1.1 Основные понятия предметной области}{6}{}%
+\contentsline {subsection}{\numberline {0.1.2}Обследование процесса мерчендайзинга и выявление проблем}{8}{}%
+\contentsline {subsection}{1.2 Обследование процесса мерчендайзинга и выявление проблем}{8}{}%
+\contentsline {subsection}{\numberline {0.1.3}Введение в компьютерное зрение, нейронные сети и машинное обучение}{11}{}%
+\contentsline {subsection}{1.3 Введение в компьютерное зрение, нейронные сети и машинное обучение}{11}{}%
+\contentsline {subsection}{\numberline {0.1.4}Требования к системе «Digital Shelf» и постановка задачи}{14}{}%
+\contentsline {subsection}{1.4 Требования к системе «Digital Shelf» и постановка задачи}{14}{}%
+\contentsline {section}{\numberline {0.2}АНАЛИЗ СУЩЕСТВУЮЩИХ РЕШЕНИЙ}{16}{}%
+\contentsline {section}{2. АНАЛИЗ СУЩЕСТВУЮЩИХ РЕШЕНИЙ}{16}{}%
+\contentsline {subsection}{\numberline {0.2.1}Обзор существующих решений и обоснование разработки}{16}{}%
+\contentsline {subsection}{2.1 Обзор существующих решений и обоснование разработки}{16}{}%
+\contentsline {subsection}{\numberline {0.2.2}Архитектура YOLOv8 и её применимость к задаче}{16}{}%
+\contentsline {subsection}{2.2 Архитектура YOLOv8 и её применимость к задаче}{16}{}%
+\contentsline {subsection}{\numberline {0.2.3}Архитектура Telegram-бота на базе aiogram}{18}{}%
+\contentsline {subsection}{2.3 Архитектура Telegram-бота на базе aiogram}{18}{}%
+\contentsline {subsection}{\numberline {0.2.4}Оценка соответствия выкладки планограмме}{19}{}%
+\contentsline {subsection}{2.4 Оценка соответствия выкладки планограмме}{19}{}%
+\contentsline {section}{\numberline {0.3}СБОР И ПОДГОТОВКА ДАТАСЕТА ПРОДУКЦИИ САНТА ИМПЭКС}{21}{}%
+\contentsline {section}{3. СБОР И ПОДГОТОВКА ДАТАСЕТА ПРОДУКЦИИ САНТА ИМПЭКС}{21}{}%
+\contentsline {subsection}{\numberline {0.3.1}Анализ и структура собираемых данных}{21}{}%
+\contentsline {subsection}{3.1 Анализ и структура собираемых данных}{21}{}%
+\contentsline {subsection}{\numberline {0.3.2}Разметка данных и формирование датасета}{23}{}%
+\contentsline {subsection}{3.2 Разметка данных и формирование датасета}{23}{}%
+\contentsline {subsection}{\numberline {0.3.3}Обработка данных и аугментация}{27}{}%
+\contentsline {subsection}{3.3 Обработка данных и аугментация}{27}{}%
+\contentsline {section}{\numberline {0.4}РАЗРАБОТКА, ОБУЧЕНИЕ И ОЦЕНКА МОДЕЛИ НЕЙРОННОЙ СЕТИ}{29}{}%
+\contentsline {section}{4. РАЗРАБОТКА, ОБУЧЕНИЕ И ОЦЕНКА МОДЕЛИ НЕЙРОННОЙ СЕТИ}{29}{}%
+\contentsline {subsection}{\numberline {0.4.1}Выбор архитектуры нейронной сети для детекции объектов}{29}{}%
+\contentsline {subsection}{4.1 Выбор архитектуры нейронной сети для детекции объектов}{29}{}%
+\contentsline {subsection}{\numberline {0.4.2}Обзор архитектуры YOLOv8}{29}{}%
+\contentsline {subsection}{4.2 Обзор архитектуры YOLOv8}{29}{}%
+\contentsline {subsection}{\numberline {0.4.3}Обучение модели YOLOv8}{31}{}%
+\contentsline {subsection}{4.3 Обучение модели YOLOv8}{31}{}%
+\contentsline {subsection}{\numberline {0.4.4}Гиперпараметры модели YOLOv8}{32}{}%
+\contentsline {subsection}{4.4 Гиперпараметры модели YOLOv8}{32}{}%
+\contentsline {subsection}{\numberline {0.4.5}Разработка мобильного приложения «Retail Vision»}{33}{}%
+\contentsline {subsection}{4.5 Разработка мобильного приложения «Retail Vision»}{33}{}%
+\contentsline {subsection}{\numberline {0.4.6}Тестирование и оценка модели нейронной сети}{36}{}%
+\contentsline {subsection}{4.6 Тестирование и оценка модели нейронной сети}{36}{}%
+\contentsline {section}{\numberline {0.5}РАЗВЁРТЫВАНИЕ СИСТЕМЫ}{39}{}%
+\contentsline {section}{5. РАЗВЁРТЫВАНИЕ СИСТЕМЫ}{39}{}%
+\contentsline {subsection}{\numberline {0.5.1}Выбор стратегии развёртывания системы}{39}{}%
+\contentsline {subsection}{5.1 Выбор стратегии развёртывания системы}{39}{}%
+\contentsline {subsection}{\numberline {0.5.2}Контейнеризация и конфигурация серверного окружения}{46}{}%
+\contentsline {subsection}{5.2 Контейнеризация и конфигурация серверного окружения}{46}{}%
+\contentsline {subsection}{\numberline {0.5.3}Тестирование развёрнутой системы}{47}{}%
+\contentsline {subsection}{5.3 Тестирование развёрнутой системы}{47}{}%
+\contentsline {subsection}{\numberline {0.5.4}Мониторинг, логирование и оповещение}{49}{}%
+\contentsline {subsection}{5.4 Мониторинг, логирование и оповещение}{49}{}%
+\contentsline {section}{\numberline {0.6}ТЕХНИКО-ЭКОНОМИЧЕСКОЕ ОБОСНОВАНИЕ}{51}{}%
+\contentsline {section}{6. ТЕХНИКО-ЭКОНОМИЧЕСКОЕ ОБОСНОВАНИЕ}{51}{}%
+\contentsline {subsection}{\numberline {0.6.1}Исходные данные для расчета экономического эффекта}{51}{}%
+\contentsline {subsection}{6.1 Исходные данные для расчета экономического эффекта}{51}{}%
+\contentsline {subsection}{\numberline {0.6.2}Расчет объёма функций программного обеспечения}{51}{}%
+\contentsline {subsection}{6.2 Расчет объёма функций программного обеспечения}{51}{}%
+\contentsline {subsection}{\numberline {0.6.3}Расчет полной себестоимости программного продукта}{52}{}%
+\contentsline {subsection}{6.3 Расчет полной себестоимости программного продукта}{52}{}%
+\contentsline {subsection}{\numberline {0.6.4}Расчет цены и прибыли по программному продукту}{57}{}%
+\contentsline {subsection}{6.4 Расчет цены и прибыли по программному продукту}{57}{}%
+\contentsline {section}{ЗАКЛЮЧЕНИЕ}{59}{}%
+\contentsline {section}{СПИСОК СОКРАЩЕНИЙ}{60}{}%
+\contentsline {section}{СПИСОК ЛИТЕРАТУРЫ}{61}{}%
+\contentsline {section}{ПРИЛОЖЕНИЕ А Описание применения}{62}{}%
+\contentsline {section}{ПРИЛОЖЕНИЕ Б Текст программы}{63}{}%

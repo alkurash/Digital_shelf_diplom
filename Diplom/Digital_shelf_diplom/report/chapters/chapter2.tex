@@ -41,6 +41,7 @@
     \par \gostFont Таблица \thechaptercntr .\thetablecntr \spc {--}
     Сравнительный анализ существующих решений
 
+    \renewcommand{\arraystretch}{1.5} % Увеличение высоты ячеек таблицы до 8-10мм
     \begin{tabular}{|l|c|c|c|c|}
       \hline
       \gostFont Характеристика
@@ -95,38 +96,31 @@
   формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $\mathcal{L} = \lambda_{\mathrm{box}} \cdot \mathcal{L}_{\mathrm{box}}
-  + \lambda_{\mathrm{cls}} \cdot \mathcal{L}_{\mathrm{cls}}
-  + \lambda_{\mathrm{dfl}} \cdot \mathcal{L}_{\mathrm{dfl}}$
-  \hfill (\thechaptercntr .\theformulacntr)
+  \par \redline $\mathcal{L} = \lambda_{\mathrm{box}} \cdot \mathcal{L}_{\mathrm{box}} + \lambda_{\mathrm{cls}} \cdot \mathcal{L}_{\mathrm{cls}} + \lambda_{\mathrm{dfl}} \cdot \mathcal{L}_{\mathrm{dfl}}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
-  \begin{tabular}{p{0.875cm}p{0.3cm}p{15.175cm}}
-    & где  & $\mathcal{L}_{\mathrm{box}}$ {--} потеря регрессии ограничивающего
-             прямоугольника; \\
-    &      & $\mathcal{L}_{\mathrm{cls}}$ {--} потеря классификации
-             (Binary Cross-Entropy); \\
-    &      & $\mathcal{L}_{\mathrm{dfl}}$ {--} Distribution Focal Loss
-             для уточнения координат; \\
-    &      & $\lambda_{\mathrm{box}},\,\lambda_{\mathrm{cls}},\,
-             \lambda_{\mathrm{dfl}}$ {--} весовые коэффициенты компонент. \\
+  \begin{tabular}{p{0.875cm}p{0.3cm}p{15,175cm}}
+    & где  & $\mathcal{L}_{\mathrm{box}}$ {--} потеря регрессии ограничирующего прямоугольника; \\
+    &      & $\mathcal{L}_{\mathrm{cls}}$ {--} потеря классификации (Binary Cross-Entropy); \\
+    &      & $\mathcal{L}_{\mathrm{dfl}}$ {--} Distribution Focal Loss для уточнения координат; \\
+    &      & $\lambda_{\mathrm{box}},\,\lambda_{\mathrm{cls}},\,\lambda_{\mathrm{dfl}}$ {--} весовые коэффициенты компонент. \\
   \end{tabular}
+  \vspace{13pt}
 
   \par \redline Качество детекции оценивается метрикой mAP, рассчитываемой
   по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $\mathrm{mAP} = \scaleto{\frac{1}{N}
-  \sum_{i=1}^{N} \mathrm{AP}_i}{20pt}$
-  \hfill (\thechaptercntr .\theformulacntr)
+  \par \redline $\mathrm{mAP} = \scaleto{\frac{1}{N} \sum_{i=1}^{N} \mathrm{AP}_i}{20pt}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
-  \begin{tabular}{p{0.875cm}p{0.3cm}p{15.175cm}}
+  \begin{tabular}{p{0.875cm}p{0.3cm}p{15,175cm}}
     & где  & $N$ {--} количество классов объектов (SKU); \\
-    &      & $\mathrm{AP}_i$ {--} средняя точность для $i$-го класса~---
-             площадь под кривой точность-полнота. \\
+    &      & $\mathrm{AP}_i$ {--} средняя точность для $i$-го класса~--- площадь под кривой точность-полнота. \\
   \end{tabular}
-  \formulaspace
+  \vspace{13pt}
 
   % -------------------------------------------------------
   \subtitlespace
@@ -135,41 +129,27 @@
   \subtitlespace
   % -------------------------------------------------------
 
-  \par \redline Telegram-бот «Retail Vision» разработан с использованием
-  фреймворка \textbf{aiogram} {--} асинхронной Python-библиотеки для работы
-  с Telegram Bot API~[15].
-  Выбор aiogram обусловлен его асинхронной архитектурой на основе asyncio,
-  позволяющей обслуживать множество одновременных запросов без блокировки
-  потока выполнения.
-
-  \par \redline Поток данных в системе выглядит следующим образом:
-  мерчендайзер отправляет фотографию в бот, обработчик принимает изображение
-  и передаёт его в сервисный слой, где выполняется предобработка
-  (ресайз до $640 \times 640$ пикселей) и инференс YOLOv8.
-  Результаты детекции сравниваются с планограммой, после чего аннотированный
-  снимок и текстовый отчёт возвращаются в Telegram. Там пользователь(мерчендайзер) может увидеть результат обработки и анализа системы.
-  Суммарное время обработки запроса рассчитывается по формуле
-  (\thechaptercntr .\theformulacntr):
+  \par \redline Telegram-бот «Retail Vision» разработан с использованием фреймворка \textbf{aiogram}, обеспечивающего асинхронное взаимодействие с Telegram Bot API. Пользователь отправляет фотографию торговой полки, после чего изображение проходит предобработку, анализируется моделью YOLOv8, сравнивается с планограммой, а затем аннотированное изображение и текстовый отчёт возвращаются в чат Telegram. Суммарное время обработки запроса рассчитывается по формуле (\thechaptercntr .\theformulacntr).
 
   \formulaspace
-  \par \redline $t_{\mathrm{total}} = t_{\mathrm{recv}} + t_{\mathrm{pre}}
-  + t_{\mathrm{forward}} + t_{\mathrm{nms}} + t_{\mathrm{send}}$
-  \hfill (\thechaptercntr .\theformulacntr)
+  \par \redline $t_{\mathrm{total}} = t_{\mathrm{recv}} + t_{\mathrm{pre}} + t_{\mathrm{forward}} + t_{\mathrm{nms}} + t_{\mathrm{send}}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
-  \begin{tabular}{p{0.875cm}p{0.3cm}p{15.175cm}}
+  \begin{tabular}{p{0.875cm}p{0.3cm}p{15,175cm}}
     & где  & $t_{\mathrm{recv}}$ {--} время получения изображения от Telegram API; \\
     &      & $t_{\mathrm{pre}}$ {--} время предобработки (ресайз, нормализация); \\
     &      & $t_{\mathrm{forward}}$ {--} время инференса нейронной сети YOLOv8; \\
     &      & $t_{\mathrm{nms}}$ {--} время выполнения Non-Maximum Suppression; \\
     &      & $t_{\mathrm{send}}$ {--} время отправки результата в Telegram. \\
   \end{tabular}
+  \vspace{13pt}
 
   \par \redline Целевое суммарное время обработки не должно превышать
   $t_{\mathrm{total}} \leq 10$~с.
   Архитектура системы «Retail Vision» представлена на рисунке
   \thechaptercntr .\theimagecntr.
-
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/bot_architecture.png}
@@ -177,12 +157,6 @@
     Архитектура системы «Retail Vision» и взаимодействие компонентов}
     \label{fig:botarchitecture}
   \end{figure} \addtocounter{imagecntr}{1}
-  \par \redline Представленная модульная структура обеспечивает гибкость системы,
-  позволяя проводить обновление весов нейросетевой модели или модификацию алгоритмов 
-  сверки без необходимости изменения базовой логики Telegram-бота. Такое разделение 
-  ответственности между компонентами гарантирует высокую отказоустойчивость сервиса и 
-  упрощает процесс его горизонтального масштабирования при увеличении интенсивности входящего 
-  потока данных от пользователей.
 
   % -------------------------------------------------------
   \subtitlespace
@@ -204,10 +178,9 @@
   На основе полученных данных система автоматически рассчитывает ключевые показатели 
   эффективности, такие как доступность товара на полке (OSA) и доля полки (SOS), 
   формируя итоговый аналитический отчет, включающий аннотированное изображение 
-  и детальный перечень выявленных нарушений. Пример работы данного модуля 
-  и формирования ответа в интерфейсе Telegram-бота представлен на рисунке 
+  и детальный перечень выявленных нарушений. Пример работы данного модуля и формирования ответа в интерфейсе Telegram-бота представлен на рисунке, демонстрирующем процесс обработки изображения, результаты распознавания товарных позиций и автоматически сформированные данные анализа.
   \thechaptercntr .\theimagecntr.
-
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=75mm]{images/audit_report_bot.png}
@@ -230,7 +203,7 @@
   тяжелых вычислительных задач инференса YOLOv8 и механизмов работы с базой данных позволяет 
   эффективно распределять ресурсы сервера. В условиях пиковых нагрузок, возникающих при 
   одновременной отправке фотографий десятками мерчендайзеров, асинхронная природа фреймворка aiogram 
-  гарантирует стабильную постановку запросов в очередь, предотвращая потерю данных и обеспечивая 
+  гаранрантирует стабильную постановку запросов в очередь, предотвращая потерю данных и обеспечивая 
   соблюдение установленных временных ограничений на обработку.
   
   \par \redline Таким образом, проведённый анализ подтверждает обоснованность
@@ -240,6 +213,7 @@
   а формирование собственного датасета гарантирует высокое качество распознавания
   продукции «Санта Импэкс».
 
+  \par \redline Архитектура системы «Retail Vision» обеспечивает её интеграцию в существующую ИТ-инфраструктуру предприятия и позволяет расширять функциональность без существенной переработки программного кода. Модульный подход упрощает сопровождение системы и её адаптацию к изменяющимся требованиям бизнеса. Система не только автоматизирует контроль выкладки товаров, но и формирует основу для цифровизации процессов мерчендайзинга и дистрибуции. Накопление и анализ данных о состоянии торговых точек способствуют повышению эффективности продаж, оптимизации поставок и улучшению качества управленческих решений.
   \par
 }
 

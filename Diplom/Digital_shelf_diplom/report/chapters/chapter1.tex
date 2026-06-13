@@ -41,10 +41,10 @@
   Каждая товарная позиция обладает набором идентификационных характеристик:
   уникальный код SKU (Stock Keeping Unit), внешний вид упаковки, цветовая схема,
   форма и размер.
-  Для формирования качественной обучающей выборки был проведен анализ морфологических признаков упаковок, включая их геометрию, тип материала и специфику цветовых решений бренда. 
-  Именно совокупность этих признаков позволяет системе компьютерного зрения однозначно идентифицировать товар на фотографии торгового ларя. 
-  Виды продукции «Санта Импэкс», подлежащие контролю выкладки, представлены на рисунке \thechaptercntr .\theimagecntr.
-
+  Для формирования обучающей выборки был проведен анализ признаков упаковок, включая их геометрию, тип материала и специфику цветовых решений бренда. 
+  Именно совокупность этих признаков позволяет системе компьютерного зрения идентифицировать товар на фотографии торгового ларя. 
+  Виды продукции «Санта Импэкс», подлежащие контроля выкладки, представлены на рисунке \thechaptercntr .\theimagecntr.
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth, height=0.9\textheight]{images/santa_impex_assortment.png}
@@ -58,7 +58,7 @@
   оформления полочного пространства и поддержания стандартов выкладки~[1].
   Мерчендайзер {--} специалист, осуществляющий регулярные визиты в торговые точки
   с целью проверки и корректировки выкладки товаров в соответствии с установленными
-  стандартами компании.
+  стандандартами компании.
 
   \par \redline Планограмма {--} это эталонная схема расположения товаров на торговом
   оборудовании, определяющая порядок размещения SKU, количество фейсингов
@@ -78,8 +78,8 @@
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $SOS = \scaleto{\frac{F_{brand}}{F_{total}}}{20pt} \cdot 100\%$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $SOS = \scaleto{\frac{F_{brand}}{F_{total}}}{20pt} \cdot 100\%$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -87,14 +87,15 @@
     &      & $F_{brand}$ {--} количество фейсингов товаров бренда «Санта Импэкс»; \\
     &      & $F_{total}$ {--} общее количество фейсингов в данной товарной категории. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline OSA (On-Shelf Availability) {--} показатель наличия товара на полке.
   Определяет долю SKU из планограммы, фактически присутствующих в выкладке,
   и рассчитывается по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $OSA = \scaleto{\frac{N_{present}}{N_{plan}}}{20pt} \cdot 100\%$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $OSA = \scaleto{\frac{N_{present}}{N_{plan}}}{20pt} \cdot 100\%$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -102,7 +103,8 @@
     &      & $N_{present}$ {--} количество SKU, фактически присутствующих в выкладке; \\
     &      & $N_{plan}$ {--} количество SKU, предусмотренных планограммой. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Таким образом, предметная область данной работы охватывает процессы
   мерчендайзинга продукции «Санта Импэкс», количественные показатели качества
   выкладки (SOS, OSA), а также методы автоматизированного контроля соответствия
@@ -157,8 +159,8 @@
   выполнения задания (КВЗ), рассчитываемый по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $KBZ = \scaleto{\frac{T_{completed}}{T_{total}}}{20pt} \cdot 100\%$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $KBZ = \scaleto{\frac{T_{completed}}{T_{total}}}{20pt} \cdot 100\%$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -166,7 +168,8 @@
     &      & $T_{completed}$ {--} количество выполненных заданий за период; \\
     &      & $T_{total}$ {--} общее количество запланированных заданий за период. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Работа мерчендайзера охватывает несколько ключевых задач в каждой
   торговой точке:
 
@@ -185,7 +188,7 @@
   система автоматически выполняет все остальные шаги.
   Схема автоматизированного процесса представлена на рисунке
   \thechaptercntr .\theimagecntr.
-
+  
   \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/merchandising_process_automated.png}
@@ -234,8 +237,8 @@
   тензором по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $I \in \mathbb{R}^{H \times W \times 3}$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $I \in \mathbb{R}^{H \times W \times 3}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -243,15 +246,16 @@
     &      & $W$ {--} ширина изображения в пикселях; \\
     &      & $3$ {--} количество цветовых каналов (R, G, B). \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Задача детекции объектов на изображении сводится к нахождению
   ограничивающих прямоугольников (bounding boxes) для каждой товарной позиции.
   Ограничивающий прямоугольник задаётся вектором по формуле
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $\hat{b} = \left(x_c,\; y_c,\; w,\; h,\; c,\; p_c\right)$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $\hat{b} = \left(x_c,\; y_c,\; w,\; h,\; c,\; p_c\right)$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -260,15 +264,12 @@
     &      & $c$ {--} предсказанный класс объекта (SKU); \\
     &      & $p_c$ {--} степень уверенности модели в правильности предсказания. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Рассмотрим нейронную сеть как некоторую математическую модель и её
   программную реализацию.
-  Рассматривая нейронную сеть как «чёрный ящик», изображённый на рисунке
-  \thechaptercntr .\theimagecntr, мы понимаем, что на вход подаётся фотография
-  торгового ларя, сделанная мерчендайзером через Telegram-бот, а на выходе
-  формируется набор предсказанных ограничивающих прямоугольников с идентификаторами
-  SKU и оценками уверенности.
-
+ \par \redline Рассматривая нейронную сеть как «чёрный ящик» (рисунок \thechaptercntr .\theimagecntr), мы понимаем, что её внутреннее устройство — слои, веса, функции активации — скрыто от пользователя. На вход такого «ящика» подаётся фотография торгового ларя, сделанная мерчендайзером через Telegram-бота. Изображение может быть получено в разных условиях освещённости, под разными углами, с частичными перекрытиями товаров. На выходе сеть формирует набор предсказанных ограничивающих прямоугольников (bounding boxes), каждый из которых сопровождается идентификатором SKU (артикул товара) и оценкой уверенности (confidence score). Эти выходные данные уже интерпретируются последующими модулями: координаты используются для сравнения с эталонной планограммой, а уверенность — для фильтрации ложных срабатываний. Благодаря такой «чёрно-ящичной» абстракции разработчик может использовать мощные предобученные модели, не вникая в детали их реализации, что ускоряет внедрение и упрощает сопровождение системы.
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=145mm]{images/nn_black_box.png}
@@ -277,14 +278,8 @@
     \label{fig:NNBlackBox}
   \end{figure} \addtocounter{imagecntr}{1}
 
-  \par \redline Нейронная сеть, рассматриваемая как «белый ящик», состоит из нейронов,
-  собранных в упорядоченные слои.
-  Входной слой принимает тензор изображения, скрытые слои последовательно извлекают
-  признаки возрастающего уровня абстракции, а выходной слой формирует предсказания
-  координат и классов объектов.
-  Пример архитектуры нейронной сети с двумя скрытыми слоями представлен на рисунке
+  \par \redline Нейронная сеть состоит из нейронов, объединённых в последовательные слои. Входной слой принимает изображение, скрытые слои извлекают признаки различного уровня абстракции, а выходной слой формирует предсказания классов и координат объектов. Пример архитектуры нейронной сети с двумя скрытыми слоями представлен на рисунке
   \thechaptercntr .\theimagecntr.
-
   \begin{figure}[H]
     \centering
     \includegraphics[width=155mm]{images/nn_white_box.png}
@@ -298,8 +293,8 @@
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $S = w_1 \cdot x_1 + w_2 \cdot x_2 + \dots + w_n \cdot x_n + b$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $S = w_1 \cdot x_1 + w_2 \cdot x_2 + \dots + w_n \cdot x_n + b$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -308,20 +303,22 @@
     &      & $w_n$ {--} $n$-тый весовой коэффициент; \\
     &      & $b$ {--} коэффициент смещения. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Выходное значение нейрона рассчитывается по формуле
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $y = F\left(S\right)$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $y = F\left(S\right)$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
-
+  
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
     & где  & $F(\ldots)$ {--} функция активации нейрона; \\
     &      & $y$ {--} выходное значение нейронного элемента. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Структура нейронного элемента показана на рисунке
   \thechaptercntr .\theimagecntr.
 
@@ -342,8 +339,8 @@
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $S(i, j) = \displaystyle\sum_{m}\sum_{n} I(i+m,\; j+n) \cdot K(m, n)$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $S(i, j) = \displaystyle\sum_{m}\sum_{n} I(i+m,\; j+n) \cdot K(m, n)$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -351,33 +348,32 @@
     &      & $K$ {--} ядро свёртки (фильтр); \\
     &      & $S$ {--} результирующая карта признаков. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Качество детектора оценивается метрикой mAP (mean Average Precision),
   которая вычисляется через метрику IoU (Intersection over Union) {--} меру перекрытия
   предсказанного и эталонного прямоугольников.
   IoU рассчитывается по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $IoU = \scaleto{\frac{\left|B_{pred} \cap B_{gt}\right|}
-  {\left|B_{pred} \cup B_{gt}\right|}}{20pt}$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $IoU = \scaleto{\frac{\left|B_{pred} \cap B_{gt}\right|}{\left|B_{pred} \cup B_{gt}\right|}}{20pt}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
     & где  & $B_{pred}$ {--} предсказанный ограничивающий прямоугольник; \\
     &      & $B_{gt}$ {--} эталонный ограничивающий прямоугольник (ground truth). \\
   \end{tabular}
-
-
+  \vspace{13pt}
+  
   \par \redline Функция потерь при обучении детектора включает три составляющих:
   ошибку классификации, ошибку локализации и ошибку объектности.
   Суммарная функция потерь записывается по формуле
   (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $L = \lambda_{cls} \cdot L_{cls} + \lambda_{loc} \cdot L_{loc}
-  + \lambda_{obj} \cdot L_{obj}$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $L = \lambda_{cls} \cdot L_{cls} + \lambda_{loc} \cdot L_{loc} + \lambda_{obj} \cdot L_{obj}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -386,13 +382,14 @@
     &      & $L_{obj}$ {--} составляющая потери по объектности; \\
     &      & $\lambda_{cls},\; \lambda_{loc},\; \lambda_{obj}$ {--} весовые коэффициенты. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline Обновление весовых коэффициентов сети в процессе обучения выполняется
   методом градиентного спуска по формуле (\thechaptercntr .\theformulacntr):
 
   \formulaspace
-  \par \redline $w_{t+1} = w_t - \alpha \cdot \scaleto{\frac{\partial L}{\partial w_t}}{16pt}$
-  \hfill (\thechaptercntr .\theformulacntr) \redline
+  \par \redline $w_{t+1} = w_t - \alpha \cdot \scaleto{\frac{\partial L}{\partial w_t}}{16pt}$,
+  \hfill (\thechaptercntr .\theformulacntr) \hspace*{-0.5cm}\redline
   \formulaspace \addtocounter{formulacntr}{1}
 
   \begin{tabular}{p{0,875cm}p{0,3cm}p{15,175cm}}
@@ -400,7 +397,8 @@
     &      & $\alpha$ {--} скорость обучения (learning rate); \\
     &      & $\scaleto{\frac{\partial L}{\partial w_t}}{12pt}$ {--} градиент функции потерь по весам. \\
   \end{tabular}
-
+  \vspace{13pt}
+  
   \par \redline В задаче детекции товаров «Санта Импэкс» применяется подход переноса
   обучения (transfer learning): нейронная сеть предварительно обучается на крупных
   открытых датасетах (COCO, ImageNet), а затем дообучается на специфическом датасете
@@ -408,7 +406,7 @@
   Принципиальная схема работы детектора YOLOv8 при обработке фотографии,
   полученной от мерчендайзера через Telegram-бот, представлена на рисунке
   \thechaptercntr.\theimagecntr.
-
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/yolo_pipeline.png}
@@ -437,11 +435,6 @@
     статистики.
 
 
-
-  \par \redline Таким образом, задача автоматического анализа фотографий торговых
-  полок формулируется как задача обучения с учителем в области компьютерного зрения,
-  решаемая с применением свёрточных нейронных сетей архитектуры YOLOv8.
-
   \par
 }
 
@@ -458,14 +451,11 @@
 
 {\gostFont
 
-  \par \redline Система «Digital Shelf» должна обеспечивать автоматическую проверку
-  выкладки продукции «Санта Импэкс» в торговых точках.
-  Для этого система принимает фотографию торговой полки, отправленную мерчендайзером
-  через Telegram-бот, производит детальный нейросетевой анализ изображения
-  и возвращает пользователю аннотированный результат непосредственно в чат.
-  Структурная схема системы «Digital Shelf» представлена на рисунке
-  \thechaptercntr .\theimagecntr.
+  \par \redline После получения изображения серверная часть системы выполняет его обработку, запуск модели YOLOv8 и анализ результатов детекции. На основе полученных данных производится сравнение фактической выкладки с эталонной планограммой, после чего формируется отчёт о выявленных несоответствиях.
 
+  \par \redline Система «Digital Shelf» предназначена для автоматической проверки выкладки продукции «Санта Импэкс» в торговых точках. Пользователь отправляет фотографию полки через Telegram-бот, после чего система выполняет анализ изображения и возвращает аннотированный результат в чат. Структурная схема системы «Digital Shelf» представлена на рисунке
+  \thechaptercntr .\theimagecntr.
+  \vspace{13pt}
   \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{images/retail_vision_architecture.png}
@@ -489,7 +479,7 @@
   \par \redline 6. Время обработки одного изображения {--} не более 10~секунд
   с момента получения фотографии сервером.
   \par \redline 7. Сохранение обработанного изображения и отчёта в базе данных
-  с привязкой к торговой точке, дате и идентификатору мерчендайзера.
+  with привязкой к торговой точке, дате и идентификатору мерчендайзера.
 
   \par \redline К системе также предъявляются нефункциональные требования.
   Система должна быть устойчива к вариативности входных изображений: различным
@@ -504,8 +494,8 @@
   \par \redline Задачей данного проекта является разработка системы «Digital Shelf»
   {--} программного обеспечения автоматизированного контроля выкладки товаров
   «Санта Импэкс» в торговых точках, реализованного в виде Telegram-бота
-  с интегрированным нейросетевым модулем на основе YOLOv8, модулем сравнения
-  с планограммой и модулем автоматического формирования отчётов.
+  with интегрированным нейросетевым модулем на основе YOLOv8, модулем сравнения
+  with планограммой и модулем автоматического формирования отчётов.
 
   \par \redline Для выполнения поставленной задачи необходимо:
   собрать и разметить датасет фотографий торговых полок с продукцией «Санта Импэкс»;
@@ -515,6 +505,28 @@
   обеспечить хранение результатов в реляционной базе данных;
   провести тестирование и оценку качества системы по метрикам mAP, Precision
   и Recall.
+
+  \par \redline Разрабатываемая система должна обеспечивать возможность
+  масштабирования как по количеству поддерживаемых торговых точек, так и по
+  объёму обрабатываемых данных. Архитектура программного обеспечения должна
+  допускать расширение перечня контролируемых товарных позиций, подключение новых
+  модулей анализа и интеграцию с корпоративными информационными системами
+  предприятия без необходимости существенной переработки существующего кода.
+
+  \par \redline Особое внимание необходимо уделить обеспечению достоверности
+  результатов распознавания. Для этого требуется провести подбор оптимальных
+  параметров обучения нейросетевой модели, выполнить анализ качества детекции на
+  тестовой выборке и определить влияние различных факторов внешней среды,
+  включая уровень освещённости, наличие посторонних объектов в кадре и степень
+  перекрытия товаров, на точность работы системы.
+
+  \par \redline Внедрение системы «Digital Shelf» позволит сократить время,
+  затрачиваемое сотрудниками на проведение аудита торговых полок, повысить
+  объективность контроля выкладки продукции и обеспечить оперативное выявление
+  нарушений планограммы. Использование технологий компьютерного зрения и
+  искусственного интеллекта создаёт предпосылки для дальнейшей цифровизации
+  процессов мерчендайзинга и повышения эффективности управления представленностью
+  продукции в розничной сети.
 
   \par
 }
